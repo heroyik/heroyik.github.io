@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Infinite cube</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="demo-styles.css" />
+
+    <!-- The following libraries and polyfills are recommended to maximize browser support -->
+    <!-- NOTE: you must adjust the paths as appropriate for your project -->
+
+    <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+    <!--     <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> -->
+
+    <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+    <!--     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script> -->
+
+    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+    <!--     <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script> -->
+
+    <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script
+      src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div id="card">
+      <!-- All you need to put beautiful, interactive 3D content on your site: -->
+      <model-viewer
+        src="https://cdn.glitch.com/d263da59-6ab2-4e2d-9a53-413463337be9%2Ft5.gltf?v=1605721467148"
+        ios-src="https://cdn.glitch.com/d263da59-6ab2-4e2d-9a53-413463337be9%2Ft5.usdz?v=1605721467069"
+        poster="https://cdn.glitch.com/d263da59-6ab2-4e2d-9a53-413463337be9%2Fposter%20(2).png?v=1605721470025"
+        alt="A 3D model of infinite cube"
+        style="background-color: unset;"
+        loading="lazy"
+        ar-modes="scene-viewer webxr quick-look"
+        shadow-intensity="1"
+        shadow-softness="1"
+        exposure="2"
+        camera-controls
+        ar-scale="fixed"
+        auto-rotate
+        ar
+      >
+      </model-viewer>
+      <section class="attribution">
+        <span>
+          <h1>
+            3D modeled and rendered by
+            <a href="mailto:heroyik@gmail.com">Nick</a>
+          </h1>
+          <!--        <span style="font-size: 15px;">Made of walnut and 5mm tampered glass, 1200(W)*750(D)*330(H)mm.</span><br>
+-->
+          <span style="font-size: 12px;"
+            >Made of walnut and 5mm tampered glass, 350(W)x350(D)x450(H)mm
+          </span>
+        </span>
+        <!-- 
+      <a class="cc" href="https://creativecommons.org/licenses/by/2.0/" target="_blank">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg">
+      </a>
+-->
+      </section>
+    </div>
+
+    <footer>
+      <span
+        >I truely believe the power of <b>DEMOCRATIZATION</b> in furniture,
+        fashion, etc.</span
+      >
+      <span
+        >Please place it to where you love and enjoy my design assets
+        <b>freely</b>!</span
+      >
+      <span style="font-size: 12px;"
+        >Inspired by
+        <a
+          href="https://www.katzmoseswoodworking.com/new-products/infinity-cube-table-frees-plans"
+          >Infinity Cube Table</a
+        ></span
+      >
+      <span style="font-size: 12px;"
+        >See
+        <a
+          href="https://everythingmetalandwood.com/projects/infinity-cube-table/"
+          >details</a
+        >
+        what original designer offers, it's really cool!</span
+      >
+      <span style="font-size: 12px;"
+        >Endless love to <a href="https://yzed.me">YZED</a>(<a
+          href="https://instagram.com/yzed_official?igshid=jhj5sxkwn5u5"
+          >instagram</a
+        >, <a href="https://yzed-ar.netlify.app">portfolios</a>)</span
+      >
+      <span>Please don't forget to see my <a href="https://1st-coffee-t.glitch.me/">1st</a> project</span>
+      <!--       <a href="https://github.com/GoogleWebComponents/model-viewer" target="_blank">&lt;model-viewer&gt;</a> web component.</span>
+    <span>It makes displaying 3D and AR content on the web easy ✌️</span>
+    <a href="https://glitch.com/edit/#!/remix/model-viewer">
+      <img src="https://cdn.glitch.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix%402x.png?1513093958726" alt="remix button" aria-label="remix" height="33">
+    </a>
+-->
+    </footer>
+
+    <!-- 💁 Include both scripts below to support all browsers! -->
+
+    <!-- Loads <model-viewer> for modern browsers: -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+
+    <!-- Loads <model-viewer> for old browsers like IE11: -->
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+  </body>
+</html>
