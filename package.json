@@ -1,21 +1,27 @@
 {
-  "name": "eleventy-on-glitch",
-  "description": "A starter template for 11ty (eleventy) static site generator on glitch.com",
+  "name": "maison-de-nick",
+  "description": "Maison de nIcK — digital portfolio by nIcK, showcasing AI-driven language apps, 3D fashion, woodwork, and web experiments.",
   "tags": [
+    "portfolio",
     "eleventy",
-    "11ty",
-    "ssr",
-    "static",
-    "glitch",
-    "template"
+    "ai",
+    "language-learning",
+    "3d",
+    "fashion"
   ],
-  "version": "1.0.0",
+  "version": "2.0.0",
   "scripts": {
     "build": "eleventy",
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "test": "node .github/setup.js"
   },
-  "dependencies": {
-    "@11ty/eleventy": "0.12.1"
+  "dependencies": {},
+  "overrides": {
+    "liquidjs": "10.27.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5",
+    "playwright": "^1.58.2"
+  }
 }
