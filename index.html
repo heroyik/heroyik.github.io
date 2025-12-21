@@ -67,7 +67,7 @@
 
 <footer>
   Maintained by <a href="mailto:heroyik@gmail.com">heroyik@gmail.com</a><br>
-  Last update on 2025/12/20 (migrate to netlify with optimized 3d models and html)
+  Last update on 2025/12/20 (migrated to <span id="hosting-provider">github pages</span> with optimized 3d models and html)
 </footer>
 
     </main>
@@ -78,7 +78,9 @@
     <!-- GitHub Pages Link Rewriter -->
     <script>
         (function() {
+            const hostingProvider = document.getElementById('hosting-provider');
             if (window.location.hostname.includes('github.io')) {
+                if (hostingProvider) hostingProvider.textContent = 'github pages';
                 console.log('GitHub Pages detected: Rewriting Netlify links...');
                 document.querySelectorAll('a[href*=".netlify.app"]').forEach(a => {
                     try {
@@ -88,6 +90,8 @@
                         a.href = `https://${user}.github.io/${subdomain}`;
                     } catch (e) { console.error('Link rewrite error:', e); }
                 });
+            } else if (window.location.hostname.includes('netlify.app')) {
+                if (hostingProvider) hostingProvider.textContent = 'netlify';
             }
         })();
     </script>
