@@ -20,6 +20,7 @@ Welcome to **Maison de nIcK**, a portfolio showcasing my works in 3D fashion des
 
 - **[Tetris](https://tetmin.netlify.app)**
 - **[Colloquial English](https://col_eng.netlify.app)**
+- **[Daily US Stock Briefing](https://finrep.netlify.app)**
 
 
 ## Deployment
