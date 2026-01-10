@@ -2,3 +2,36 @@ dist
 node_modules
 # Local Netlify folder
 .netlify
+
+# Dependencies
+node_modules/
+dist/
+build/
+.next/
+out/
+.cache/
+
+# Secrets
+.env
+.env.local
+*.pem
+*.key
+auth.json
+
+# System
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+.antigravity/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# Large files
+*.blend
