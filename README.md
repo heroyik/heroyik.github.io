@@ -21,12 +21,14 @@ Welcome to **Maison de nIcK**, a portfolio showcasing my works in 3D fashion des
 - **[Tetris](https://tetmin.netlify.app)**
 - **[Colloquial English](https://col_eng.netlify.app)**
 - **[Daily US Stock Briefing](https://finrep.netlify.app)**
+- **[VozViva](https://vozviva-spanish-mastery-866843072360.us-west1.run.app/)**
 
 
 ## Deployment
 
 This site is hosted on **GitHub Pages** (migrated from Netlify) and serves as a central hub for my various projects.
+- [x] Create Implementation Plan <!-- id: 0 -->
+- [/] Update README.md with VozViva project <!-- id: 1 -->
 
 ### Recent Updates
 - Resolved all Dependabot security alerts (upgraded Eleventy to v3.1.2).
-
