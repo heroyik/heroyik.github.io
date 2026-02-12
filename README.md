@@ -22,15 +22,17 @@ Welcome to **Maison de nIcK**, a portfolio showcasing my works in 3D fashion des
 - **[Colloquial English](https://col_eng.netlify.app)**
 - **[Daily US Stock Briefing](https://finrep.netlify.app)**
 - **[VozViva](https://vozviva-spanish-mastery-866843072360.us-west1.run.app/)**
-
+- **[HolaVoca](https://heroyik.github.io/holavoca)**
 
 ## Deployment
 
 This site is hosted on **GitHub Pages** (migrated from Netlify) and serves as a central hub for my various projects.
+
 - [x] Create Implementation Plan <!-- id: 0 -->
 - [x] Update README.md with VozViva project <!-- id: 1 -->
 - [x] Update project badges (VozViva: COOL, removal from others) <!-- id: 2 -->
 
 ### Recent Updates
+
 - Resolved all Dependabot security alerts (upgraded Eleventy to v3.1.2).
 - Updated project badges for better visibility and status tracking.
