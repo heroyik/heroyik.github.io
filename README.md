@@ -1,4 +1,4 @@
-# Maison de nIcK (Revision: 1.1)
+# Maison de nIcK (Revision: 1.1.1)
 
 Welcome to **Maison de nIcK**, a portfolio showcasing my works in 3D fashion
 design, woodwork, and web development.
@@ -7,21 +7,21 @@ design, woodwork, and web development.
 
 ### Fashion Design (CLO3D, HTML, Mixamo, Blender)
 
-- **[Leggings and Sleeveless Blouse](https://female-leggings.netlify.app)**
-- **[Leggings and Batwing Blouse](https://fblc.netlify.app)**
-- **[Set-in Jacket](https://fsijc.netlify.app)**
-- **[Light Skyblue Dress](https://sn-mm1.netlify.app)** (Motivated by MAXMARA)
+- **[Leggings and Sleeveless Blouse](https://heroyik.github.io/female-leggings)**
+- **[Leggings and Batwing Blouse](https://heroyik.github.io/fblc)**
+- **[Set-in Jacket](https://heroyik.github.io/fsijc)**
+- **[Light Skyblue Dress](https://heroyik.github.io/sn-mm1)** (Motivated by MAXMARA)
 
 ### Woodwork Design (Sketchup, Blender)
 
-- **[Coffee Table](https://1st-coffee-t.netlify.app)**
-- **[Infinite Cube](https://inf-cube.netlify.app)**
+- **[Coffee Table](https://heroyik.github.io/1st-coffee-t)**
+- **[Infinite Cube](https://heroyik.github.io/inf-cube)**
 
 ### Web Apps & Games
 
-- **[Tetris](https://tetmin.netlify.app)**
+- **[Tetris](https://heroyik.github.io/tetmin)**
 - **[Colloquial English](https://col_eng.netlify.app)**
-- **[Daily US Stock Briefing](https://finrep.netlify.app)**
+- **[Daily US Stock Briefing](https://heroyik.github.io/finrep)**
 - **[VozViva](https://vozviva-spanish-mastery-866843072360.us-west1.run.app/)**
 - **[HolaVoca](https://heroyik.github.io/holavoca)**
 
@@ -36,6 +36,8 @@ central hub for my various projects.
 
 ### Recent Updates
 
+- **Revision: 1.1.1**: Replaced all dynamic `.netlify.app` link resolutions
+  with static `heroyik.github.io` links across the site.
 - **Revision: 1.1**: Updated the homepage hero collage to dynamically assign
   and shuffle 9 distinct images into a responsive 4x4 grid. Included Playwright
   test (`verify-collage.js`) for validation.

@@ -60,11 +60,11 @@
         <h2>Flagship with Google Antigravity, Openai Codex, Google AI studio, ...</h2>
         <p>AI-first workflows. Fast, weird, and real.</p>
       </div>
-      <div class="card-grid">                
+      <div class="card-grid">
         <a class="work-card" href="https://heroyik.github.io/hola-a1a2/">
           <div class="work-meta">
             <span class="badge-rebooted">HOT</span>
-<!--            <span class="badge-dev">IN DEV</span> -->
+            <!--            <span class="badge-dev">IN DEV</span> -->
             <span class="mono">Language</span>
           </div>
           <h3>HOLA ESPAÑOL A1/A2</h3>
@@ -72,7 +72,7 @@
         </a>
         <a class="work-card" href="https://spanish-shadowing-coach-623754443070.us-west1.run.app/">
           <div class="work-meta">
-<!--            <span class="badge-rebooted">NEW</span> -->
+            <!--            <span class="badge-rebooted">NEW</span> -->
             <span class="mono">Language</span>
           </div>
           <h3>Spanish Verb Shadowing</h3>
@@ -80,7 +80,7 @@
         </a>
         <a class="work-card" href="https://vozviva-spanish-mastery-mp3-671064663335.us-west1.run.app/">
           <div class="work-meta">
-<!--            <span class="badge-rebooted">COOL</span> -->
+            <!--            <span class="badge-rebooted">COOL</span> -->
             <span class="mono">Language</span>
           </div>
           <h3>VozViva</h3>
@@ -88,7 +88,7 @@
         </a>
         <a class="work-card" href="https://heroyik.github.io/holavoca">
           <div class="work-meta">
-<!--            <span class="badge-rebooted">NEW</span> -->
+            <!--            <span class="badge-rebooted">NEW</span> -->
             <span class="mono">LANGUAGE</span>
           </div>
           <h3>HolaVoca</h3>
@@ -102,7 +102,7 @@
           <h3>3D concept shop</h3>
           <p>Retail, spatial, and fashion ideas living in one 3D space.</p>
         </a>
-        <a class="work-card" href="https://tetmin.netlify.app">
+        <a class="work-card" href="https://heroyik.github.io/tetmin">
           <div class="work-meta">
             <span class="mono">Play</span>
           </div>
@@ -116,15 +116,15 @@
           <h3>Colloquial English</h3>
           <p>Street-level English, zero fluff.</p>
         </a>
-        <a class="work-card" href="https://finrep.netlify.app">
+        <a class="work-card" href="https://heroyik.github.io/finrep">
           <div class="work-meta">
             <span class="mono">Markets</span>
           </div>
           <h3>Daily US Stock Briefing</h3>
           <p>Signal over noise. Every day.</p>
         </a>
-<!--
-<a class="work-card" href="https://3df101.netlify.app">
+        <!--
+<a class="work-card" href="https://heroyik.github.io/3df101">
   <div class="work-meta">
     <span class="mono">Fashion</span>
   </div>
@@ -165,9 +165,9 @@
             <div>
               <h4>Garments motivated from camouflage fatigues</h4>
               <ul>
-                <li><a href="https://female-leggings.netlify.app">Leggings and sleeveless blouse</a></li>
-                <li><a href="https://fblc.netlify.app">Leggings and batwing blouse</a></li>
-                <li><a href="https://fsijc.netlify.app">Set-in jacket</a></li>
+                <li><a href="https://heroyik.github.io/female-leggings">Leggings and sleeveless blouse</a></li>
+                <li><a href="https://heroyik.github.io/fblc">Leggings and batwing blouse</a></li>
+                <li><a href="https://heroyik.github.io/fsijc">Set-in jacket</a></li>
               </ul>
             </div>
             <div>
@@ -175,14 +175,14 @@
                   href="https://www.trenbe.com/good/13483946?utm_source=network&utm_medium=cpc&utm_campaign=critarget&utm_content=high">MAXMARA
                   dress</a></h4>
               <ul>
-                <li><a href="https://sn-mm1.netlify.app">light skyblue dress</a></li>
+                <li><a href="https://heroyik.github.io/sn-mm1">light skyblue dress</a></li>
               </ul>
             </div>
             <div>
               <h4>Woodworks designed by sketchup, blender</h4>
               <ul>
-                <li><a href="https://1st-coffee-t.netlify.app">Coffee table</a></li>
-                <li><a href="https://inf-cube.netlify.app">infinite cube</a></li>
+                <li><a href="https://heroyik.github.io/1st-coffee-t">Coffee table</a></li>
+                <li><a href="https://heroyik.github.io/inf-cube">infinite cube</a></li>
               </ul>
             </div>
           </div>
@@ -200,26 +200,7 @@
   <!-- Scripts -->
   <script src="/assets/js/app.js"></script>
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <!-- GitHub Pages Link Rewriter -->
-  <script>
-    (function () {
-      const hostingProvider = document.getElementById('hosting-provider');
-      if (window.location.hostname.includes('github.io')) {
-        if (hostingProvider) hostingProvider.textContent = 'github pages';
-        console.log('GitHub Pages detected: Rewriting Netlify links...');
-        document.querySelectorAll('a[href*=".netlify.app"]').forEach(a => {
-          try {
-            const url = new URL(a.href);
-            const subdomain = url.hostname.split('.')[0];
-            const user = 'heroyik';
-            a.href = `https://${user}.github.io/${subdomain}`;
-          } catch (e) { console.error('Link rewrite error:', e); }
-        });
-      } else if (window.location.hostname.includes('netlify.app')) {
-        if (hostingProvider) hostingProvider.textContent = 'netlify';
-      }
-    })();
-  </script>
+
 </body>
 
 </html>
