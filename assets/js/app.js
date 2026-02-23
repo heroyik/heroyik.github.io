@@ -38,15 +38,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const heroTiles = document.querySelectorAll(".hero-collage .tile");
   if (heroTiles.length > 0) {
     const imageData = [
-      { src: "bg.jpg", url: "https://heroyik.github.io/4SeasonsShop" },
+      { src: "bg.jpg", url: "https://heroyik.github.io/fsijc" },
       { src: "Screenshot_20260223_142955_Chrome.jpg", url: "https://heroyik.github.io/hola-a1a2/" },
-      { src: "Screenshot_20260223_143212_Chrome.jpg", url: "https://spanish-shadowing-coach-623754443070.us-west1.run.app/" },
-      { src: "Screenshot_20260223_143245_Chrome.jpg", url: "https://vozviva-spanish-mastery-mp3-671064663335.us-west1.run.app/" },
-      { src: "Screenshot_20260223_143310_Chrome.jpg", url: "https://heroyik.github.io/holavoca" },
-      { src: "Screenshot_20260223_143326_Chrome.jpg", url: "https://heroyik.github.io/tetmin" },
-      { src: "Screenshot_20260223_143441_Chrome.jpg", url: "https://heroyik.github.io/col_eng" },
-      { src: "Screenshot_20260223_151436_Chrome.jpg", url: "https://heroyik.github.io/finrep" },
-      { src: "Screenshot_20260223_151442_Chrome.jpg", url: "https://heroyik.github.io/female-leggings" }
+      { src: "Screenshot_20260223_143212_Chrome.jpg", url: "https://heroyik.github.io/holavoca" },
+      { src: "Screenshot_20260223_143245_Chrome.jpg", url: "https://heroyik.github.io/4SeasonsShop" },
+      { src: "Screenshot_20260223_143310_Chrome.jpg", url: "https://heroyik.github.io/col_eng" },
+      { src: "Screenshot_20260223_143326_Chrome.jpg", url: "https://heroyik.github.io/finrep" },
+      { src: "Screenshot_20260223_143441_Chrome.jpg", url: "https://heroyik.github.io/tetmin" },
+      { src: "Screenshot_20260223_151436_Chrome.jpg", url: "https://spanish-shadowing-coach-623754443070.us-west1.run.app/" },
+      { src: "Screenshot_20260223_151442_Chrome.jpg", url: "https://vozviva-spanish-mastery-mp3-671064663335.us-west1.run.app/" }
     ];
 
     // Fisher-Yates shuffle
