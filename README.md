@@ -1,4 +1,4 @@
-# Maison de nIcK (Revision: 1.1.1)
+# Maison de nIcK (Revision: 1.1.2)
 
 Welcome to **Maison de nIcK**, a portfolio showcasing my works in 3D fashion
 design, woodwork, and web development.
@@ -20,7 +20,7 @@ design, woodwork, and web development.
 ### Web Apps & Games
 
 - **[Tetris](https://heroyik.github.io/tetmin)**
-- **[Colloquial English](https://col_eng.netlify.app)**
+- **[Colloquial English](https://heroyik.github.io/col_eng)**
 - **[Daily US Stock Briefing](https://heroyik.github.io/finrep)**
 - **[VozViva](https://vozviva-spanish-mastery-866843072360.us-west1.run.app/)**
 - **[HolaVoca](https://heroyik.github.io/holavoca)**
@@ -36,6 +36,8 @@ central hub for my various projects.
 
 ### Recent Updates
 
+- **Revision: 1.1.2**: Fixed remaining `netlify.app` links (like `col_eng`)
+  that contained underscores.
 - **Revision: 1.1.1**: Replaced all dynamic `.netlify.app` link resolutions
   with static `heroyik.github.io` links across the site.
 - **Revision: 1.1**: Updated the homepage hero collage to dynamically assign
