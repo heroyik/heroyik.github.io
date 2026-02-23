@@ -1,65 +1,83 @@
-# Maison de nIcK (Revision: 1.1.3)
+# 🏛️ Maison de nIcK (Revision: 1.2.0)
 
-Welcome to **Maison de nIcK**, a portfolio showcasing my works in 3D fashion
-design, woodwork, and web development.
+> Welcome to **Maison de nIcK**, a digital portfolio showcasing my creative
+> journey across 3D fashion design, woodwork, web development, and AI-driven
+> experiences.
 
-## Featured Works
+## 🚀 Featured Works
 
-### Fashion Design (CLO3D, HTML, Mixamo, Blender)
+### 👕 Fashion Design (CLO3D, HTML, Mixamo, Blender)
 
-- **[Leggings and Sleeveless Blouse](https://heroyik.github.io/female-leggings)**
-- **[Leggings and Batwing Blouse](https://heroyik.github.io/fblc)**
-- **[Set-in Jacket](https://heroyik.github.io/fsijc)**
-- **[Light Skyblue Dress](https://heroyik.github.io/sn-mm1)** (Motivated by MAXMARA)
+*Garments designed and simulated using advanced 3D tools.*
 
-### Woodwork Design (Sketchup, Blender)
+| Project | Motivation | Link |
+| :--- | :--- | :--- |
+| **Leggings & Sleeveless Blouse** | Camouflage fatigues | [View Project](https://heroyik.github.io/female-leggings) |
+| **Leggings & Batwing Blouse** | Camouflage fatigues | [View Project](https://heroyik.github.io/fblc) |
+| **Set-in Jacket** | Camouflage fatigues | [View Project](https://heroyik.github.io/fsijc) |
+| **Light Skyblue Dress** | MAXMARA Dress | [View Project](https://heroyik.github.io/sn-mm1) |
+
+---
+
+### 🪑 Woodwork Design (Sketchup, Blender)
+
+*Physical space concepts brought to life in 3D.*
 
 - **[Coffee Table](https://heroyik.github.io/1st-coffee-t)**
 - **[Infinite Cube](https://heroyik.github.io/inf-cube)**
 
-### Web Apps & Games (Languages, Play, Markets)
+---
+
+## 💻 Web Apps & Games (Languages, Play, Markets)
+
+### 🇪🇸 Language Learning
+
+> 💡 *Tools built to accelerate language acquisition using AI and native audio.*
 
 - **[HOLA ESPAÑOL A1/A2](https://heroyik.github.io/hola-a1a2/)**
-  - **Badge**: `<HOT>`
-  - **Description**: DELE A1/A2 mastery for English-fluent Koreans, built on
-    the Instituto Cervantes curriculum standards.
-
+  - 🏷️ **Status**: `HOT`
+  - 📝 **Details**: DELE A1/A2 mastery for English-fluent Koreans, strictly
+    built on the Instituto Cervantes curriculum standards.
 - **[Spanish Verb Shadowing](https://spanish-shadowing-coach-623754443070.us-west1.run.app/)**
-  - **Description**: Spanish Shadowing Coach - Native Audio with Gemini Live.
-
+  - 📝 **Details**: Spanish Shadowing Coach featuring native audio interaction
+    powered by Gemini Live.
 - **[VozViva](https://vozviva-spanish-mastery-mp3-671064663335.us-west1.run.app/)**
-  - **Description**: Spanish Mastery with Native Rhythm - Perfecting Tense
-    Intuition.
-
+  - 📝 **Details**: Spanish Mastery focusing on native rhythm and perfecting
+    tense intuition.
 - **[HolaVoca](https://heroyik.github.io/holavoca)**
-  - **Description**: Hands down the most fun Spanish vocab app.
-
+  - 📝 **Details**: Hands down the most fun and interactive Spanish
+    vocabulary memorization app.
 - **[Colloquial English](https://heroyik.github.io/col_eng)**
-  - **Description**: Street-level English, zero fluff.
+  - 📝 **Details**: Street-level English learning with zero fluff.
+
+### 🎮 Play & ✨ Flagship
 
 - **[Tetris](https://heroyik.github.io/tetmin)**
-  - **Description**: Play it. Hack it. See the system.
+  - 📝 **Details**: Play it. Hack it. See the system behind it.
+- **[3D Concept Shop](https://heroyik.github.io/4SeasonsShop)**
+  - 🏷️ **Status**: `IN DEV` (Flagship)
+  - 📝 **Details**: Retail, spatial, and fashion ideas living interactively
+    in one unified 3D space.
+
+### 📈 Markets
 
 - **[Daily US Stock Briefing](https://heroyik.github.io/finrep)**
-  - **Description**: Signal over noise. Every day.
+  - 📝 **Details**: Signal over noise. Daily insights for the US stock market.
 
-### Flagship Concept Apps
+---
 
-- **[3D Concept Shop](https://heroyik.github.io/4SeasonsShop)**
-  - **Badge**: `<IN DEV>`
-  - **Description**: Retail, spatial, and fashion ideas living in one 3D space.
+## 🌍 Deployment details
 
-## Deployment
+This site is securely hosted on **GitHub Pages** (previously Netlify) and
+serves as the central hub connecting all my disparate creative projects.
 
-This site is hosted on **GitHub Pages** (migrated from Netlify) and serves as a
-central hub for my various projects.
+---
 
-- [x] Create Implementation Plan <!-- id: 0 -->
-- [x] Update README.md with VozViva project <!-- id: 1 -->
-- [x] Update project badges (VozViva: COOL, removal from others) <!-- id: 2 -->
+## 🔄 Recent Updates
 
-### Recent Updates
-
+- **Revision: 1.2.0**: Completely overhauled `README.md` typography and
+  formatting using advanced Markdown tags (Tables, Blockquotes, Lists, Icons)
+  for much higher readability and detail.
 - **Revision: 1.1.3**: Added highly detailed descriptions for each app card,
   incorporating their specific sub-descriptions directly from the site UI.
 - **Revision: 1.1.2**: Fixed remaining `netlify.app` links (like `col_eng`)
@@ -69,5 +87,3 @@ central hub for my various projects.
 - **Revision: 1.1**: Updated the homepage hero collage to dynamically assign
   and shuffle 9 distinct images into a responsive 4x4 grid. Included Playwright
   test (`verify-collage.js`) for validation.
-- Resolved all Dependabot security alerts (upgraded Eleventy to v3.1.2).
-- Updated project badges for better visibility and status tracking.
