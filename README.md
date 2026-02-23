@@ -1,4 +1,4 @@
-# Maison de nIcK (Revision: 1.1.2)
+# Maison de nIcK (Revision: 1.1.3)
 
 Welcome to **Maison de nIcK**, a portfolio showcasing my works in 3D fashion
 design, woodwork, and web development.
@@ -17,13 +17,37 @@ design, woodwork, and web development.
 - **[Coffee Table](https://heroyik.github.io/1st-coffee-t)**
 - **[Infinite Cube](https://heroyik.github.io/inf-cube)**
 
-### Web Apps & Games
+### Web Apps & Games (Languages, Play, Markets)
+
+- **[HOLA ESPAÑOL A1/A2](https://heroyik.github.io/hola-a1a2/)**
+  - **Badge**: `<HOT>`
+  - **Description**: DELE A1/A2 mastery for English-fluent Koreans, built on
+    the Instituto Cervantes curriculum standards.
+
+- **[Spanish Verb Shadowing](https://spanish-shadowing-coach-623754443070.us-west1.run.app/)**
+  - **Description**: Spanish Shadowing Coach - Native Audio with Gemini Live.
+
+- **[VozViva](https://vozviva-spanish-mastery-mp3-671064663335.us-west1.run.app/)**
+  - **Description**: Spanish Mastery with Native Rhythm - Perfecting Tense
+    Intuition.
+
+- **[HolaVoca](https://heroyik.github.io/holavoca)**
+  - **Description**: Hands down the most fun Spanish vocab app.
+
+- **[Colloquial English](https://heroyik.github.io/col_eng)**
+  - **Description**: Street-level English, zero fluff.
 
 - **[Tetris](https://heroyik.github.io/tetmin)**
-- **[Colloquial English](https://heroyik.github.io/col_eng)**
+  - **Description**: Play it. Hack it. See the system.
+
 - **[Daily US Stock Briefing](https://heroyik.github.io/finrep)**
-- **[VozViva](https://vozviva-spanish-mastery-866843072360.us-west1.run.app/)**
-- **[HolaVoca](https://heroyik.github.io/holavoca)**
+  - **Description**: Signal over noise. Every day.
+
+### Flagship Concept Apps
+
+- **[3D Concept Shop](https://heroyik.github.io/4SeasonsShop)**
+  - **Badge**: `<IN DEV>`
+  - **Description**: Retail, spatial, and fashion ideas living in one 3D space.
 
 ## Deployment
 
@@ -36,6 +60,8 @@ central hub for my various projects.
 
 ### Recent Updates
 
+- **Revision: 1.1.3**: Added highly detailed descriptions for each app card,
+  incorporating their specific sub-descriptions directly from the site UI.
 - **Revision: 1.1.2**: Fixed remaining `netlify.app` links (like `col_eng`)
   that contained underscores.
 - **Revision: 1.1.1**: Replaced all dynamic `.netlify.app` link resolutions
