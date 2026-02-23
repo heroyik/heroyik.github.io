@@ -35,3 +35,6 @@ yarn-error.log*
 
 # Large files
 *.blend
+
+# Temp files
+verify_output.txt
