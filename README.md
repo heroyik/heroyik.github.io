@@ -1,6 +1,7 @@
-# Maison de nIcK
+# Maison de nIcK (Revision: 1.1)
 
-Welcome to **Maison de nIcK**, a portfolio showcasing my works in 3D fashion design, woodwork, and web development.
+Welcome to **Maison de nIcK**, a portfolio showcasing my works in 3D fashion
+design, woodwork, and web development.
 
 ## Featured Works
 
@@ -26,7 +27,8 @@ Welcome to **Maison de nIcK**, a portfolio showcasing my works in 3D fashion des
 
 ## Deployment
 
-This site is hosted on **GitHub Pages** (migrated from Netlify) and serves as a central hub for my various projects.
+This site is hosted on **GitHub Pages** (migrated from Netlify) and serves as a
+central hub for my various projects.
 
 - [x] Create Implementation Plan <!-- id: 0 -->
 - [x] Update README.md with VozViva project <!-- id: 1 -->
@@ -34,5 +36,8 @@ This site is hosted on **GitHub Pages** (migrated from Netlify) and serves as a 
 
 ### Recent Updates
 
+- **Revision: 1.1**: Updated the homepage hero collage to dynamically assign
+  and shuffle 9 distinct images into a responsive 4x4 grid. Included Playwright
+  test (`verify-collage.js`) for validation.
 - Resolved all Dependabot security alerts (upgraded Eleventy to v3.1.2).
 - Updated project badges for better visibility and status tracking.
