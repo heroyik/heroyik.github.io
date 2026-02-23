@@ -37,28 +37,32 @@ document.addEventListener("DOMContentLoaded", () => {
   // Shuffle and assign hero collage images
   const heroTiles = document.querySelectorAll(".hero-collage .tile");
   if (heroTiles.length > 0) {
-    const images = [
-      "bg.jpg",
-      "Screenshot_20260223_142955_Chrome.jpg",
-      "Screenshot_20260223_143212_Chrome.jpg",
-      "Screenshot_20260223_143245_Chrome.jpg",
-      "Screenshot_20260223_143310_Chrome.jpg",
-      "Screenshot_20260223_143326_Chrome.jpg",
-      "Screenshot_20260223_143441_Chrome.jpg",
-      "Screenshot_20260223_151436_Chrome.jpg",
-      "Screenshot_20260223_151442_Chrome.jpg",
+    const imageData = [
+      { src: "bg.jpg", url: "https://heroyik.github.io/4SeasonsShop" },
+      { src: "Screenshot_20260223_142955_Chrome.jpg", url: "https://heroyik.github.io/hola-a1a2/" },
+      { src: "Screenshot_20260223_143212_Chrome.jpg", url: "https://spanish-shadowing-coach-623754443070.us-west1.run.app/" },
+      { src: "Screenshot_20260223_143245_Chrome.jpg", url: "https://vozviva-spanish-mastery-mp3-671064663335.us-west1.run.app/" },
+      { src: "Screenshot_20260223_143310_Chrome.jpg", url: "https://heroyik.github.io/holavoca" },
+      { src: "Screenshot_20260223_143326_Chrome.jpg", url: "https://heroyik.github.io/tetmin" },
+      { src: "Screenshot_20260223_143441_Chrome.jpg", url: "https://heroyik.github.io/col_eng" },
+      { src: "Screenshot_20260223_151436_Chrome.jpg", url: "https://heroyik.github.io/finrep" },
+      { src: "Screenshot_20260223_151442_Chrome.jpg", url: "https://heroyik.github.io/female-leggings" }
     ];
 
     // Fisher-Yates shuffle
-    for (let i = images.length - 1; i > 0; i--) {
+    for (let i = imageData.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [images[i], images[j]] = [images[j], images[i]];
+      [imageData[i], imageData[j]] = [imageData[j], imageData[i]];
     }
 
-    // Assign shuffled images to tiles
+    // Assign shuffled images and URLs to tiles
     heroTiles.forEach((tile, index) => {
-      if (index < images.length) {
-        tile.style.backgroundImage = `url('/assets/images/${images[index]}')`;
+      if (index < imageData.length) {
+        tile.style.backgroundImage = `url('/assets/images/${imageData[index].src}')`;
+        tile.style.cursor = 'pointer';
+        tile.addEventListener('click', () => {
+          window.location.href = imageData[index].url;
+        });
       }
     });
   }
