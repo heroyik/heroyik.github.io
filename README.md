@@ -1,4 +1,4 @@
-# 🏛️ Maison de nIcK (Revision: 1.2.0)
+# 🏛️ Maison de nIcK (Revision: 1.2.1)
 
 > Welcome to **Maison de nIcK**, a digital portfolio showcasing my creative
 > journey across 3D fashion design, woodwork, web development, and AI-driven
@@ -75,6 +75,8 @@ serves as the central hub connecting all my disparate creative projects.
 
 ## 🔄 Recent Updates
 
+- **Revision: 1.2.1**: Added a GitHub profile link with SVG icon next to the
+  "nIcK" text in the footer.
 - **Revision: 1.2.0**: Completely overhauled `README.md` typography and
   formatting using advanced Markdown tags (Tables, Blockquotes, Lists, Icons)
   for much higher readability and detail.
