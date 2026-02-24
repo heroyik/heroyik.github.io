@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const imageData = [
       { src: "bg.jpg", url: "https://heroyik.github.io/fsijc" },
       { src: "Screenshot_20260223_142955_Chrome.jpg", url: "https://heroyik.github.io/hola-a1a2/" },
-      { src: "Screenshot_20260223_143212_Chrome.jpg", url: "https://heroyik.github.io/holavoca" },
+      { src: "Screenshot_20260223_143212_Chrome.jpg", url: "https://heroyik.github.io/holavoca/v2" },
       { src: "Screenshot_20260223_143245_Chrome.jpg", url: "https://heroyik.github.io/4SeasonsShop" },
       { src: "Screenshot_20260223_143310_Chrome.jpg", url: "https://heroyik.github.io/col_eng" },
       { src: "Screenshot_20260223_143326_Chrome.jpg", url: "https://heroyik.github.io/finrep" },
