@@ -47,6 +47,8 @@
 - **[HolaVoca](https://heroyik.github.io/holavoca)**
   - 📝 **Details**: Hands down the most fun and interactive Spanish
     vocabulary memorization app.
+- **[VocaJapones](https://heroyik.github.io/VocaJapones)**
+  - 📝 **Details**: Japanese vocabulary learning.
 - **[Colloquial English](https://heroyik.github.io/col_eng)**
   - 📝 **Details**: Street-level English learning with zero fluff.
 
