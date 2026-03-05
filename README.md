@@ -1,4 +1,4 @@
-# 🏛️ Maison de nIcK (Revision: 1.2.2)
+# 🏛️ Maison de nIcK (Revision: 1.2.3)
 
 > Welcome to **Maison de nIcK**, a digital portfolio showcasing my creative
 > journey across 3D fashion design, woodwork, web development, and AI-driven
@@ -77,6 +77,7 @@ serves as the central hub connecting all my disparate creative projects.
 
 ## 🔄 Recent Updates
 
+- **Revision: 1.2.3**: Upgraded `minimatch` to `10.2.3` to resolve high-severity ReDoS vulnerabilities (CVE-2026-27904, CVE-2026-27903).
 - **Revision: 1.2.2**: Applied overrides to resolve Dependabot high/moderate
   severity alerts for `minimatch` and `markdown-it`.
 - **Revision: 1.2.1**: Added a GitHub profile link with SVG icon next to the
