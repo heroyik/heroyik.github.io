@@ -77,7 +77,7 @@ serves as the central hub connecting all my disparate creative projects.
 
 ## 🔄 Recent Updates
 
-- **Revision: 1.2.3**: Upgraded `minimatch` to `10.2.3` to resolve high-severity ReDoS vulnerabilities (CVE-2026-27904, CVE-2026-27903).
+- **Revision: 1.2.3**: Upgraded `minimatch` to `10.2.3` to resolve high-severity ReDoS vulnerabilities (CVE-2026-27904, CVE-2026-27903). Also added several technical and project-specific terms to the workspace dictionary to resolve IDE spell-check warnings.
 - **Revision: 1.2.2**: Applied overrides to resolve Dependabot high/moderate
   severity alerts for `minimatch` and `markdown-it`.
 - **Revision: 1.2.1**: Added a GitHub profile link with SVG icon next to the
