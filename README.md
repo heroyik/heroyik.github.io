@@ -1,109 +1,132 @@
-# 🏛️ Maison de nIcK (Revision: 1.2.5)
+# 🏛️ Maison de nIcK — v2.0.0
 
-> Welcome to **Maison de nIcK**, a digital portfolio showcasing my creative
-> journey across 3D fashion design, woodwork, web development, and AI-driven
-> experiences.
+> A digital portfolio by **nIcK** — showcasing AI-driven language apps, 3D
+> fashion design, woodwork, market tools, and interactive web experiences,
+> all built without formal design or coding credentials, powered by AI.
 
-## 🚀 Featured Works
+## 🚀 What's New in v2.0.0
 
-### 👕 Fashion Design (CLO3D, HTML, Mixamo, Blender)
+### 🆕 KamiVoca — Japanese Vocabulary App
 
-*Garments designed and simulated using advanced 3D tools.*
+> **[heroyik.github.io/kamivoca](https://heroyik.github.io/kamivoca)**
 
-| Project | Motivation | Link |
-| :--- | :--- | :--- |
-| **Leggings & Sleeveless Blouse** | Camouflage fatigues | [View Project](https://heroyik.github.io/female-leggings) |
-| **Leggings & Batwing Blouse** | Camouflage fatigues | [View Project](https://heroyik.github.io/fblc) |
-| **Set-in Jacket** | Camouflage fatigues | [View Project](https://heroyik.github.io/fsijc) |
-| **Light Skyblue Dress** | MAXMARA Dress | [View Project](https://heroyik.github.io/sn-mm1) |
+A brand-new Japanese vocabulary learning app, cloned and extended from the
+HolaVoca architecture.
+
+| Feature | Detail |
+| :--- | :--- |
+| **UI Style** | Duolingo-inspired, modern Tokyo aesthetic |
+| **Auth** | Google Sign-In (Firebase Auth) |
+| **Data** | All progress stored in **Firestore** per user |
+| **Leaderboard** | Live ranking with avatar, score, and streaks |
+| **Profile** | XP, level, current streak, total correct answers |
+| **Review mode** | Missed-word re-drill engine |
+| **Vocab data** | `vocab.json` with 200+ entries including yomigana, |
+| | synonyms, example sentences, and JLPT tags |
+| **Collage tile** | Added as 11th tile in homepage hero |
 
 ---
 
-### 🪑 Woodwork Design (Sketchup, Blender)
+### 🎨 Homepage Hero Collage — 11 Tiles
 
-*Physical space concepts brought to life in 3D.*
+The hero collage on the homepage (`index.html`) was expanded from 10 to 11
+tiles to include the KamiVoca screenshot.
+
+- `tile-b` CSS grid area split into `tile-b` + `tile-k`
+- New tile mapped to `Screenshot_20260312_011638_Chrome.jpg`
+  → links to `heroyik.github.io/kamivoca`
+- `verify-collage.js` (Playwright test) updated to assert 11 tiles
+
+---
+
+### 🔒 Security — 0 Vulnerabilities
+
+All npm vulnerabilities resolved as of v2.0.0:
+
+| Package | Severity | CVE / Advisory | Fix |
+| :--- | :--- | :--- | :--- |
+| `liquidjs` | High | GHSA-wmfp-5q7x-987x | Upgraded to `10.25.0` |
+| `minimatch` | High | CVE-2026-27904, CVE-2026-27903 | Overridden to `10.2.3` |
+| `markdown-it` | Moderate | Dependabot alert | Overridden to `~14.1.1` |
+
+---
+
+## 💻 All Projects
+
+### 🇯🇵 Japanese
+
+| App | Status | Link |
+| :--- | :--- | :--- |
+| **KamiVoca** | 🆕 NEW | [heroyik.github.io/kamivoca](https://heroyik.github.io/kamivoca) |
+| **VocaJapones** | Live | [heroyik.github.io/VocaJapones](https://heroyik.github.io/VocaJapones) |
+
+### 🇪🇸 Spanish
+
+| App | Status | Link |
+| :--- | :--- | :--- |
+| **HOLA ESPAÑOL A1/A2** | 🔥 HOT | [heroyik.github.io/hola-a1a2](https://heroyik.github.io/hola-a1a2/) |
+| **HolaVoca 2.0** | REBOOT | [heroyik.github.io/holavoca/v2](https://heroyik.github.io/holavoca/v2) |
+| **Spanish Verb Shadowing** | Live | [shadowing coach](https://spanish-shadowing-coach-623754443070.us-west1.run.app/) |
+| **VozViva** | Live | [vozviva](https://vozviva-spanish-mastery-mp3-671064663335.us-west1.run.app/) |
+
+### 🇬🇧 English
+
+| App | Status | Link |
+| :--- | :--- | :--- |
+| **Colloquial English** | Live | [heroyik.github.io/col_eng](https://heroyik.github.io/col_eng) |
+
+### 🎮 Play & ✨ Flagship
+
+| App | Status | Link |
+| :--- | :--- | :--- |
+| **Tetris** | Live | [heroyik.github.io/tetmin](https://heroyik.github.io/tetmin) |
+| **3D Concept Shop** | IN DEV | [heroyik.github.io/4SeasonsShop](https://heroyik.github.io/4SeasonsShop) |
+
+### 📈 Markets
+
+| App | Status | Link |
+| :--- | :--- | :--- |
+| **Daily US Stock Briefing** | Live | [heroyik.github.io/finrep](https://heroyik.github.io/finrep) |
+
+---
+
+### 👕 Fashion Design (CLO3D, Mixamo, Blender)
+
+| Project | Motivation | Link |
+| :--- | :--- | :--- |
+| **Leggings & Sleeveless Blouse** | Camouflage fatigues | [View](https://heroyik.github.io/female-leggings) |
+| **Leggings & Batwing Blouse** | Camouflage fatigues | [View](https://heroyik.github.io/fblc) |
+| **Set-in Jacket** | Camouflage fatigues | [View](https://heroyik.github.io/fsijc) |
+| **Light Skyblue Dress** | MAXMARA Dress | [View](https://heroyik.github.io/sn-mm1) |
+
+### 🪑 Woodwork Design (Sketchup, Blender)
 
 - **[Coffee Table](https://heroyik.github.io/1st-coffee-t)**
 - **[Infinite Cube](https://heroyik.github.io/inf-cube)**
 
 ---
 
-## 💻 Web Apps & Games (Languages, Play, Markets)
+## 🌍 Deployment
 
-### 🇪🇸 Language Learning
-
-> 💡 *Tools built to accelerate language acquisition using AI and native audio.*
-
-- **[HOLA ESPAÑOL A1/A2](https://heroyik.github.io/hola-a1a2/)**
-  - 🏷️ **Status**: `HOT`
-  - 📝 **Details**: DELE A1/A2 mastery for English-fluent Koreans, strictly
-    built on the Instituto Cervantes curriculum standards.
-- **[Spanish Verb Shadowing](https://spanish-shadowing-coach-623754443070.us-west1.run.app/)**
-  - 📝 **Details**: Spanish Shadowing Coach featuring native audio interaction
-    powered by Gemini Live.
-- **[VozViva](https://vozviva-spanish-mastery-mp3-671064663335.us-west1.run.app/)**
-  - 📝 **Details**: Spanish Mastery focusing on native rhythm and perfecting
-    tense intuition.
-- **[HolaVoca](https://heroyik.github.io/holavoca)**
-  - 📝 **Details**: Hands down the most fun and interactive Spanish
-    vocabulary memorization app.
-- **[VocaJapones](https://heroyik.github.io/VocaJapones)**
-  - 📝 **Details**: Japanese vocabulary learning.
-- **[KamiVoca](https://heroyik.github.io/kamivoca)** 🆕
-  - 📝 **Details**: A Japanese vocab app dripping with modern Tokyo
-    vibe. Less study, more aesthetic.
-- **[Colloquial English](https://heroyik.github.io/col_eng)**
-  - 📝 **Details**: Street-level English learning with zero fluff.
-
-### 🎮 Play & ✨ Flagship
-
-- **[Tetris](https://heroyik.github.io/tetmin)**
-  - 📝 **Details**: Play it. Hack it. See the system behind it.
-- **[3D Concept Shop](https://heroyik.github.io/4SeasonsShop)**
-  - 🏷️ **Status**: `IN DEV` (Flagship)
-  - 📝 **Details**: Retail, spatial, and fashion ideas living interactively
-    in one unified 3D space.
-
-### 📈 Markets
-
-- **[Daily US Stock Briefing](https://heroyik.github.io/finrep)**
-  - 📝 **Details**: Signal over noise. Daily insights for the US stock market.
+Hosted on **GitHub Pages**. Assets (CSS, JS, images) served directly from
+the repo root. Published path: `.` (configured in `netlify.toml`).
 
 ---
 
-## 🌍 Deployment details
+## 🔄 Revision History
 
-This site is securely hosted on **GitHub Pages** (previously Netlify) and
-serves as the central hub connecting all my disparate creative projects.
-
----
-
-## 🔄 Recent Updates
-
-- **Revision: 1.2.5**: Fixed high-severity `liquidjs` path traversal
-  vulnerability (GHSA-wmfp-5q7x-987x) by upgrading `liquidjs` to `>=10.25.0`
-  via `npm audit fix`. 0 vulnerabilities remaining.
-- **Revision: 1.2.4**: Added `KamiVoca` to the hero collage (11th tile)
-  linked to `heroyik.github.io/kamivoca`. Split `tile-b` CSS grid area into
-  `tile-b` + `tile-k` to accommodate the new entry. Updated
-  `verify-collage.js` to assert 11 tiles.
-- **Revision: 1.2.3**: Upgraded `minimatch` to `10.2.3` to resolve
-  high-severity ReDoS vulnerabilities (CVE-2026-27904, CVE-2026-27903).
-  Also added several technical and project-specific terms to the workspace
-  dictionary to resolve IDE spell-check warnings.
-- **Revision: 1.2.2**: Applied overrides to resolve Dependabot high/moderate
-  severity alerts for `minimatch` and `markdown-it`.
-- **Revision: 1.2.1**: Added a GitHub profile link with SVG icon next to the
-  "nIcK" text in the footer.
-- **Revision: 1.2.0**: Completely overhauled `README.md` typography and
-  formatting using advanced Markdown tags (Tables, Blockquotes, Lists, Icons)
-  for much higher readability and detail.
-- **Revision: 1.1.3**: Added highly detailed descriptions for each app card,
-  incorporating their specific sub-descriptions directly from the site UI.
-- **Revision: 1.1.2**: Fixed remaining `netlify.app` links (like `col_eng`)
-  that contained underscores.
-- **Revision: 1.1.1**: Replaced all dynamic `.netlify.app` link resolutions
-  with static `heroyik.github.io` links across the site.
-- **Revision: 1.1**: Updated the homepage hero collage to dynamically assign
-  and shuffle 9 distinct images into a responsive 4x4 grid. Included Playwright
-  test (`verify-collage.js`) for validation.
+| Version | What Changed |
+| :--- | :--- |
+| **v2.0.0** | KamiVoca added; hero collage → 11 tiles; all CVEs patched; |
+| | `package.json` updated to `maison-de-nick@2.0.0` |
+| **1.2.5** | `liquidjs` upgraded to `10.25.0` (GHSA-wmfp-5q7x-987x) |
+| **1.2.4** | KamiVoca 11th collage tile + `tile-k` CSS + verify test updated |
+| **1.2.3** | `minimatch` overridden to `10.2.3` (CVE-2026-27904, -27903) |
+| **1.2.2** | Dependabot alerts: `minimatch` + `markdown-it` overrides |
+| **1.2.1** | GitHub SVG icon added to footer |
+| **1.2.0** | README overhauled with tables, blockquotes, icons |
+| **1.1.3** | App card descriptions detailed |
+| **1.1.2** | Fixed remaining `netlify.app` links |
+| **1.1.1** | All links migrated to `heroyik.github.io` |
+| **1.1** | Hero collage: 9→10 images, shuffled dynamically, |
+| | Playwright `verify-collage.js` test added |
