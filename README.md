@@ -1,4 +1,4 @@
-# 🏛️ Maison de nIcK (Revision: 1.2.4)
+# 🏛️ Maison de nIcK (Revision: 1.2.5)
 
 > Welcome to **Maison de nIcK**, a digital portfolio showcasing my creative
 > journey across 3D fashion design, woodwork, web development, and AI-driven
@@ -80,6 +80,9 @@ serves as the central hub connecting all my disparate creative projects.
 
 ## 🔄 Recent Updates
 
+- **Revision: 1.2.5**: Fixed high-severity `liquidjs` path traversal
+  vulnerability (GHSA-wmfp-5q7x-987x) by upgrading `liquidjs` to `>=10.25.0`
+  via `npm audit fix`. 0 vulnerabilities remaining.
 - **Revision: 1.2.4**: Added `KamiVoca` to the hero collage (11th tile)
   linked to `heroyik.github.io/kamivoca`. Split `tile-b` CSS grid area into
   `tile-b` + `tile-k` to accommodate the new entry. Updated
