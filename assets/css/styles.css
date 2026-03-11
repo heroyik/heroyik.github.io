@@ -283,7 +283,12 @@ main > section {
 }
 
 .tile-b {
-  grid-column: 3 / 5;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.tile-k {
+  grid-column: 4 / 5;
   grid-row: 1 / 2;
 }
 

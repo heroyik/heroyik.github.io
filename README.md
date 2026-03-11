@@ -1,4 +1,4 @@
-# 🏛️ Maison de nIcK (Revision: 1.2.3)
+# 🏛️ Maison de nIcK (Revision: 1.2.4)
 
 > Welcome to **Maison de nIcK**, a digital portfolio showcasing my creative
 > journey across 3D fashion design, woodwork, web development, and AI-driven
@@ -49,6 +49,9 @@
     vocabulary memorization app.
 - **[VocaJapones](https://heroyik.github.io/VocaJapones)**
   - 📝 **Details**: Japanese vocabulary learning.
+- **[KamiVoca](https://heroyik.github.io/kamivoca)** 🆕
+  - 📝 **Details**: A Japanese vocab app dripping with modern Tokyo
+    vibe. Less study, more aesthetic.
 - **[Colloquial English](https://heroyik.github.io/col_eng)**
   - 📝 **Details**: Street-level English learning with zero fluff.
 
@@ -77,7 +80,14 @@ serves as the central hub connecting all my disparate creative projects.
 
 ## 🔄 Recent Updates
 
-- **Revision: 1.2.3**: Upgraded `minimatch` to `10.2.3` to resolve high-severity ReDoS vulnerabilities (CVE-2026-27904, CVE-2026-27903). Also added several technical and project-specific terms to the workspace dictionary to resolve IDE spell-check warnings.
+- **Revision: 1.2.4**: Added `KamiVoca` to the hero collage (11th tile)
+  linked to `heroyik.github.io/kamivoca`. Split `tile-b` CSS grid area into
+  `tile-b` + `tile-k` to accommodate the new entry. Updated
+  `verify-collage.js` to assert 11 tiles.
+- **Revision: 1.2.3**: Upgraded `minimatch` to `10.2.3` to resolve
+  high-severity ReDoS vulnerabilities (CVE-2026-27904, CVE-2026-27903).
+  Also added several technical and project-specific terms to the workspace
+  dictionary to resolve IDE spell-check warnings.
 - **Revision: 1.2.2**: Applied overrides to resolve Dependabot high/moderate
   severity alerts for `minimatch` and `markdown-it`.
 - **Revision: 1.2.1**: Added a GitHub profile link with SVG icon next to the

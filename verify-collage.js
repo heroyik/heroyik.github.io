@@ -11,10 +11,10 @@ const path = require('path');
     // Wait for the JS to execute mapping
     await page.waitForTimeout(500);
 
-    // Verify there are 10 tiles
+    // Verify there are 11 tiles
     const tiles = await page.$$('.hero-collage .tile');
-    if (tiles.length !== 10) {
-        console.error(`Error: Expected 10 tiles, but found ${tiles.length}`);
+    if (tiles.length !== 11) {
+        console.error(`Error: Expected 11 tiles, but found ${tiles.length}`);
         process.exit(1);
     }
 
@@ -27,10 +27,10 @@ const path = require('path');
         }
     }
 
-    if (assignedCount === 10) {
-        console.log('Success: All 10 tiles have background images dynamically assigned.');
+    if (assignedCount === 11) {
+        console.log('Success: All 11 tiles have background images dynamically assigned.');
     } else {
-        console.error(`Error: Expected 10 assigned background images, found ${assignedCount}`);
+        console.error(`Error: Expected 11 assigned background images, found ${assignedCount}`);
         process.exit(1);
     }
 
