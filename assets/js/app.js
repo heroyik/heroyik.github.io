@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
       { src: "Screenshot_20260223_143441_Chrome.jpg", url: "https://heroyik.github.io/tetmin" },
       { src: "Screenshot_20260223_151436_Chrome.jpg", url: "https://spanish-shadowing-coach-623754443070.us-west1.run.app/" },
       { src: "Screenshot_20260223_151442_Chrome.jpg", url: "https://vozviva-spanish-mastery-mp3-671064663335.us-west1.run.app/" },
-      { src: "Screenshot_20260302_205507_Chrome.jpg", url: "https://heroyik.github.io/VocaJapones" },
       { src: "Screenshot_20260312_011638_Chrome.jpg", url: "https://heroyik.github.io/kamivoca" }
     ];
 
