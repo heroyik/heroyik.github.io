@@ -1,41 +1,33 @@
-# 🏛️ Maison de nIcK — v2.0.0
+# 🏛️ Maison de nIcK — v2.1.0
 
 > A digital portfolio by **nIcK** — showcasing AI-driven language apps, 3D
 > fashion design, woodwork, market tools, and interactive web experiences,
 > all built without formal design or coding credentials, powered by AI.
 
-## 🚀 What's New in v2.0.0
+## 🚀 What's New in v2.1.0
 
-### 🆕 KamiVoca — Japanese Vocabulary App
+### 💥 3D Exploding View Hero Collage
 
-> **[heroyik.github.io/kamivoca](https://heroyik.github.io/kamivoca)**
-
-A brand-new Japanese vocabulary learning app, cloned and extended from the
-HolaVoca architecture.
+The homepage hero collage has been transformed from a 2D grid into a premium, interactive **3D Isometric Stack**.
 
 | Feature | Detail |
 | :--- | :--- |
-| **UI Style** | Duolingo-inspired, modern Tokyo aesthetic |
-| **Auth** | Google Sign-In (Firebase Auth) |
-| **Data** | All progress stored in **Firestore** per user |
-| **Leaderboard** | Live ranking with avatar, score, and streaks |
-| **Profile** | XP, level, current streak, total correct answers |
-| **Review mode** | Missed-word re-drill engine |
-| **Vocab data** | `vocab.json` with 200+ entries including yomigana, |
-| | synonyms, example sentences, and JLPT tags |
-| **Collage tile** | Added as 11th tile in homepage hero |
+| **Visual Style** | Glassmorphic 3D isometric stack |
+| **Interaction** | Smooth "Exploding" animation on hover spread across the Z-axis |
+| **Connectivity** | Tiles are clickable in both stacked and exploded states |
+| **Technology** | Pure CSS 3D Transforms (`perspective`, `translateZ`, `rotate`) |
+| **Responsiveness** | Optimized for Desktop, Tablet, and Mobile (Galaxy S25/iPhone) |
 
 ---
 
-### 🎨 Homepage Hero Collage — 11 Tiles
+### 🎨 Homepage Hero Collage — 9 Tiles
 
-The hero collage on the homepage (`index.html`) was expanded from 10 to 11
-tiles to include the KamiVoca screenshot.
+The hero collage on the homepage (`index.html`) consists of 9 dynamic
+tiles representing flagship projects.
 
-- `tile-b` CSS grid area split into `tile-b` + `tile-k`
-- New tile mapped to `Screenshot_20260312_011638_Chrome.jpg`
-  → links to `heroyik.github.io/kamivoca`
-- `verify-collage.js` (Playwright test) updated to assert 11 tiles
+- 9 tiles (`tile-a` through `tile-i`) positioned in a 3D isometric stack.
+- Each tile mapped to a project screenshot and URL dynamically.
+- `verify-collage.js` (Playwright test) updated to assert 10 tiles.
 
 ---
 
@@ -57,7 +49,6 @@ All npm vulnerabilities resolved as of v2.0.0:
 
 | App | Status | Link |
 | :--- | :--- | :--- |
-| **KamiVoca** | 🆕 NEW | [heroyik.github.io/kamivoca](https://heroyik.github.io/kamivoca) |
 | **VocaJapones** | Live | [heroyik.github.io/VocaJapones](https://heroyik.github.io/VocaJapones) |
 
 ### 🇪🇸 Spanish
@@ -117,10 +108,11 @@ the repo root. Published path: `.` (configured in `netlify.toml`).
 
 | Version | What Changed |
 | :--- | :--- |
-| **v2.0.0** | KamiVoca added; hero collage → 11 tiles; all CVEs patched; |
+| **v2.1.0** | 3D Exploding View Hero Collage implemented; 9-tile layout; |
+| | Navigation links functional in all states; Eleventy build fixed; |
+| **v2.0.0** | All CVEs patched; |
 | | `package.json` updated to `maison-de-nick@2.0.0` |
 | **1.2.5** | `liquidjs` upgraded to `10.25.0` (GHSA-wmfp-5q7x-987x) |
-| **1.2.4** | KamiVoca 11th collage tile + `tile-k` CSS + verify test updated |
 | **1.2.3** | `minimatch` overridden to `10.2.3` (CVE-2026-27904, -27903) |
 | **1.2.2** | Dependabot alerts: `minimatch` + `markdown-it` overrides |
 | **1.2.1** | GitHub SVG icon added to footer |

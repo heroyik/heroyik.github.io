@@ -8,11 +8,11 @@ module.exports = function (eleventyConfig) {
     ghostMode: false,
   });
 
-  eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("assets");
 
   return {
     dir: {
-      input: "src",
+      input: ".",
       output: "dist",
     },
   };

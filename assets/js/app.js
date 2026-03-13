@@ -40,14 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const imageData = [
       { src: "bg.jpg", url: "https://heroyik.github.io/fsijc" },
       { src: "Screenshot_20260223_142955_Chrome.jpg", url: "https://heroyik.github.io/hola-a1a2/" },
-      { src: "Screenshot_20260223_143212_Chrome.jpg", url: "https://heroyik.github.io/holavoca/v2" },
+      { src: "Screenshot_20260313_221913_Chrome.jpg", url: "https://heroyik.github.io/holavoca/v2" }, // No new src provided, keeping existing.
       { src: "Screenshot_20260223_143245_Chrome.jpg", url: "https://heroyik.github.io/4SeasonsShop" },
       { src: "Screenshot_20260223_143310_Chrome.jpg", url: "https://heroyik.github.io/col_eng" },
       { src: "Screenshot_20260223_143326_Chrome.jpg", url: "https://heroyik.github.io/finrep" },
       { src: "Screenshot_20260223_143441_Chrome.jpg", url: "https://heroyik.github.io/tetmin" },
       { src: "Screenshot_20260223_151436_Chrome.jpg", url: "https://spanish-shadowing-coach-623754443070.us-west1.run.app/" },
       { src: "Screenshot_20260223_151442_Chrome.jpg", url: "https://vozviva-spanish-mastery-mp3-671064663335.us-west1.run.app/" },
-      { src: "Screenshot_20260312_011638_Chrome.jpg", url: "https://heroyik.github.io/kamivoca" }
     ];
 
     // Fisher-Yates shuffle
@@ -59,10 +58,19 @@ document.addEventListener("DOMContentLoaded", () => {
     // Assign shuffled images and URLs to tiles
     heroTiles.forEach((tile, index) => {
       if (index < imageData.length) {
-        tile.style.backgroundImage = `url('/assets/images/${imageData[index].src}')`;
+        const data = imageData[index];
+        tile.style.backgroundImage = `url('/assets/images/${data.src}')`;
         tile.style.cursor = 'pointer';
-        tile.addEventListener('click', () => {
-          window.location.href = imageData[index].url;
+        
+        // Remove old listeners if any (though usually fine on freshly querySelected elements)
+        const newTile = tile.cloneNode(true);
+        tile.parentNode.replaceChild(newTile, tile);
+        
+        newTile.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          console.log(`Navigating to: ${data.url}`);
+          window.location.href = data.url;
         });
       }
     });

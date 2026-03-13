@@ -1,0 +1,12 @@
+src/
+node_modules/
+.git/
+dist/
+brain/
+audit_report.txt
+site_names.txt
+sites.json
+sites_utf8.json
+status.txt
+verify-collage.js
+watch.json
