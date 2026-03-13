@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const themeBtns = document.querySelectorAll(".theme-btn");
   const html = document.documentElement;
   const heroCollage = document.querySelector(".hero-collage");
-  const heroToggle = document.querySelector(".hero-toggle");
 
   // Load saved theme or default to minimalist
   const savedTheme = localStorage.getItem("theme") || "minimalist";
@@ -85,20 +84,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let settleTimer;
     let isPinned = false;
 
-    const syncHeroToggle = () => {
-      if (!heroToggle) {
-        return;
-      }
-
-      const isExploded = heroCollage.classList.contains("is-exploded");
-      heroToggle.setAttribute("aria-pressed", String(isExploded));
-      heroToggle.textContent = isExploded ? "Stacked view" : "Exploded view";
-    };
-
     const setExploded = (nextState) => {
       window.clearTimeout(settleTimer);
       heroCollage.classList.toggle("is-exploded", nextState);
-      syncHeroToggle();
     };
 
     const explode = () => {
@@ -126,14 +114,23 @@ document.addEventListener("DOMContentLoaded", () => {
     heroCollage.addEventListener("mouseleave", settle);
     heroCollage.addEventListener("focusin", explode);
     heroCollage.addEventListener("focusout", settle);
+    heroCollage.addEventListener("click", (event) => {
+      if (event.target.closest(".tile")) {
+        return;
+      }
 
-    if (heroToggle) {
-      heroToggle.addEventListener("click", () => {
-        isPinned = !isPinned;
-        setExploded(isPinned);
-      });
-    }
+      isPinned = !isPinned;
+      setExploded(isPinned);
+    });
 
-    syncHeroToggle();
+    heroCollage.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") {
+        return;
+      }
+
+      event.preventDefault();
+      isPinned = !isPinned;
+      setExploded(isPinned);
+    });
   }
 });
