@@ -286,7 +286,7 @@ main > section {
 .tile-g { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(90px); z-index: 4; }
 .tile-h { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(105px); z-index: 3; }
 .tile-i { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(120px); z-index: 2; }
-
+.tile-j { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(135px); z-index: 1; }
 
 /* Exploded state (Hover on parent) */
 .hero-collage:hover .tile-a { transform: translate(-140%, -120%) rotateX(10deg) rotateZ(-5deg) translateZ(50px); }
@@ -298,7 +298,7 @@ main > section {
 .hero-collage:hover .tile-g { transform: translate(-120%, 110%) rotateX(-15deg) rotateZ(-10deg) translateZ(40px); }
 .hero-collage:hover .tile-h { transform: translate(10%, 130%) rotateX(10deg) rotateZ(12deg) translateZ(110px); }
 .hero-collage:hover .tile-i { transform: translate(140%, 120%) rotateX(-12deg) rotateZ(-8deg) translateZ(60px); }
-
+.hero-collage:hover .tile-j { transform: translate(0%, 0%) rotateX(0deg) rotateZ(0deg) translateZ(300px); opacity: 0.9; }
 
 .tile:hover {
   filter: saturate(1.2) contrast(1.1);

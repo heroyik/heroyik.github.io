@@ -20,12 +20,12 @@ The homepage hero collage has been transformed from a 2D grid into a premium, in
 
 ---
 
-### 🎨 Homepage Hero Collage — 9 Tiles
+### 🎨 Homepage Hero Collage — 10 Tiles
 
-The hero collage on the homepage (`index.html`) consists of 9 dynamic
+The hero collage on the homepage (`index.html`) consists of 10 dynamic
 tiles representing flagship projects.
 
-- 9 tiles (`tile-a` through `tile-i`) positioned in a 3D isometric stack.
+- 10 tiles (`tile-a` through `tile-j`) positioned in a 3D isometric stack.
 - Each tile mapped to a project screenshot and URL dynamically.
 - `verify-collage.js` (Playwright test) updated to assert 10 tiles.
 
@@ -108,7 +108,7 @@ the repo root. Published path: `.` (configured in `netlify.toml`).
 
 | Version | What Changed |
 | :--- | :--- |
-| **v2.1.0** | 3D Exploding View Hero Collage implemented; 9-tile layout; |
+| **v2.1.0** | 3D Exploding View Hero Collage implemented; 10-tile layout; |
 | | Navigation links functional in all states; Eleventy build fixed; |
 | **v2.0.0** | All CVEs patched; |
 | | `package.json` updated to `maison-de-nick@2.0.0` |
