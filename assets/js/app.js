@@ -35,10 +35,12 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("theme", theme);
   }
 
-  // Shuffle and assign hero collage images
+  const heroCollage = document.querySelector(".hero-collage");
+  const phoneShell = document.querySelector(".phone-shell");
+  const phoneTrigger = document.querySelector(".phone-trigger");
   const heroTiles = document.querySelectorAll(".hero-collage .tile");
   if (heroTiles.length > 0) {
-    const imageData = [
+  const imageData = [
       { src: "bg.jpg", url: "https://heroyik.github.io/fsijc" },
       { src: "Screenshot_20260223_142955_Chrome.jpg", url: "https://heroyik.github.io/hola-a1a2/" },
       { src: "Screenshot_20260313_221913_Chrome.jpg", url: "https://heroyik.github.io/holavoca/v2" }, // No new src provided, keeping existing.
@@ -49,19 +51,19 @@ document.addEventListener("DOMContentLoaded", () => {
       { src: "Screenshot_20260223_151436_Chrome.jpg", url: "https://spanish-shadowing-coach-623754443070.us-west1.run.app/" },
       { src: "Screenshot_20260223_151442_Chrome.jpg", url: "https://vozviva-spanish-mastery-mp3-671064663335.us-west1.run.app/" },
       { src: "Screenshot_20260312_011638_Chrome.jpg", url: "https://heroyik.github.io/kamivoca" }
-    ];
+  ];
 
     // Fisher-Yates shuffle
     for (let i = imageData.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [imageData[i], imageData[j]] = [imageData[j], imageData[i]];
-    }
+    const j = Math.floor(Math.random() * (i + 1));
+    [imageData[i], imageData[j]] = [imageData[j], imageData[i]];
+  }
 
     // Assign shuffled images and URLs to tiles
-    heroTiles.forEach((tile, index) => {
+  heroTiles.forEach((tile, index) => {
       if (index < imageData.length) {
-        const data = imageData[index];
-        tile.style.backgroundImage = `url('/assets/images/${data.src}')`;
+    const data = imageData[index];
+    tile.style.backgroundImage = `url('/assets/images/${data.src}')`;
         tile.style.cursor = 'pointer';
         
         // Remove old listeners if any (though usually fine on freshly querySelected elements)
@@ -73,8 +75,8 @@ document.addEventListener("DOMContentLoaded", () => {
           e.stopPropagation();
           console.log(`Navigating to: ${data.url}`);
           window.location.href = data.url;
-        });
-      }
+    });
+  }
     });
   }
 
@@ -110,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
         );
 
         observer.observe(heroCollage);
-      }
+  }
     }
 
     heroCollage.addEventListener("mouseenter", explode);
@@ -126,5 +128,5 @@ document.addEventListener("DOMContentLoaded", () => {
       explode();
       settle();
     });
-  }
+    }
 });
