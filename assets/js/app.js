@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const themeBtns = document.querySelectorAll(".theme-btn");
   const html = document.documentElement;
   const heroCollage = document.querySelector(".hero-collage");
+  const heroToggle = document.querySelector(".hero-toggle");
 
   // Load saved theme or default to minimalist
   const savedTheme = localStorage.getItem("theme") || "minimalist";
@@ -81,52 +82,58 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   if (heroCollage) {
-    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     let settleTimer;
+    let isPinned = false;
 
-    const explode = () => {
-      window.clearTimeout(settleTimer);
-      heroCollage.classList.add("is-exploded");
-    };
-
-    const settle = () => {
-      window.clearTimeout(settleTimer);
-      settleTimer = window.setTimeout(() => {
-        heroCollage.classList.remove("is-exploded");
-      }, 1800);
-    };
-
-    if (!mediaQuery.matches) {
-      window.setTimeout(explode, 350);
-
-      if ("IntersectionObserver" in window) {
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                explode();
-              }
-            });
-          },
-          { threshold: 0.4 }
-        );
-
-        observer.observe(heroCollage);
-      }
-    }
-
-    heroCollage.addEventListener("mouseenter", explode);
-    heroCollage.addEventListener("mouseleave", settle);
-    heroCollage.addEventListener("focusin", explode);
-    heroCollage.addEventListener("focusout", settle);
-    heroCollage.addEventListener("click", () => {
-      if (mediaQuery.matches) {
-        heroCollage.classList.toggle("is-exploded");
+    const syncHeroToggle = () => {
+      if (!heroToggle) {
         return;
       }
 
+      const isExploded = heroCollage.classList.contains("is-exploded");
+      heroToggle.setAttribute("aria-pressed", String(isExploded));
+      heroToggle.textContent = isExploded ? "Stacked view" : "Exploded view";
+    };
+
+    const setExploded = (nextState) => {
+      window.clearTimeout(settleTimer);
+      heroCollage.classList.toggle("is-exploded", nextState);
+      syncHeroToggle();
+    };
+
+    const explode = () => {
+      setExploded(true);
+    };
+
+    const settle = () => {
+      if (isPinned) {
+        return;
+      }
+
+      window.clearTimeout(settleTimer);
+      settleTimer = window.setTimeout(() => {
+        setExploded(false);
+      }, 1800);
+    };
+
+    heroCollage.addEventListener("mouseenter", () => {
+      if (isPinned) {
+        return;
+      }
       explode();
-      settle();
     });
+
+    heroCollage.addEventListener("mouseleave", settle);
+    heroCollage.addEventListener("focusin", explode);
+    heroCollage.addEventListener("focusout", settle);
+
+    if (heroToggle) {
+      heroToggle.addEventListener("click", () => {
+        isPinned = !isPinned;
+        setExploded(isPinned);
+      });
+    }
+
+    syncHeroToggle();
   }
 });
