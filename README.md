@@ -1,14 +1,29 @@
-# 🏛️ Maison de nIcK — v2.1.0
+# 🏛️ Maison de nIcK — v2.2.0
 
 > A digital portfolio by **nIcK** — showcasing AI-driven language apps, 3D
 > fashion design, woodwork, market tools, and interactive web experiences,
 > all built without formal design or coding credentials, powered by AI.
 
-## 🚀 What's New in v2.1.0
+## 🚀 What's New in v2.2.0
+
+### 💥 Hero Collage Refinements
+
+The 3D Exploding View Hero Collage has been polished for a smoother user experience.
+
+| Feature | Detail |
+| :--- | :--- |
+| **Hover Interaction** | Restricted tiles' "scale-up" hover effect to only apply in the non-exploded state. |
+| **Exploration UX** | Removed distracting z-index jumps and scaling when exploring the exploded collage. |
+| **Accessibility** | Tiles converted from `div` to `<a>` tags for native link behavior and better semantic structure. |
+| **Mobile Sync** | Full compatibility with Galaxy S25 and iPhone viewport sizes. |
+
+---
+
+## 🚀 Previous in v2.1.0
 
 ### 💥 3D Exploding View Hero Collage
 
-The homepage hero collage has been transformed from a 2D grid into a premium, interactive **3D Isometric Stack**.
+The homepage hero collage was transformed from a 2D grid into a premium, interactive **3D Isometric Stack**.
 
 | Feature | Detail |
 | :--- | :--- |
@@ -108,6 +123,8 @@ the repo root. Published path: `.` (configured in `netlify.toml`).
 
 | Version | What Changed |
 | :--- | :--- |
+| **v2.2.0** | Tiles converted to `<a>` tags; Hover effects removed in exploded state; |
+| | Improved exploration UX and mobile linking reliability; |
 | **v2.1.0** | 3D Exploding View Hero Collage implemented; 10-tile layout; |
 | | Navigation links functional in all states; Eleventy build fixed; |
 | **v2.0.0** | All CVEs patched; |

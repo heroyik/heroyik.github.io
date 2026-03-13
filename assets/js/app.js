@@ -64,17 +64,16 @@ document.addEventListener("DOMContentLoaded", () => {
       if (index < imageData.length) {
         const data = imageData[index];
         tile.style.backgroundImage = `url('/assets/images/${data.src}')`;
+        tile.href = data.url;
         tile.style.cursor = "pointer";
 
-        // Remove old listeners if any (though usually fine on freshly querySelected elements)
+        // Remove old listeners if any
         const newTile = tile.cloneNode(true);
         tile.parentNode.replaceChild(newTile, tile);
 
         newTile.addEventListener("click", (e) => {
-          e.preventDefault();
+          // Prevent tile click from bubbling up to heroCollage (which toggles isPinned)
           e.stopPropagation();
-          console.log(`Navigating to: ${data.url}`);
-          window.location.href = data.url;
         });
       }
     });
