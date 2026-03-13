@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const themeBtns = document.querySelectorAll(".theme-btn");
   const html = document.documentElement;
+  const heroCollage = document.querySelector(".hero-collage");
 
   // Load saved theme or default to minimalist
   const savedTheme = localStorage.getItem("theme") || "minimalist";
@@ -47,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { src: "Screenshot_20260223_143441_Chrome.jpg", url: "https://heroyik.github.io/tetmin" },
       { src: "Screenshot_20260223_151436_Chrome.jpg", url: "https://spanish-shadowing-coach-623754443070.us-west1.run.app/" },
       { src: "Screenshot_20260223_151442_Chrome.jpg", url: "https://vozviva-spanish-mastery-mp3-671064663335.us-west1.run.app/" },
-      { src: "Screenshot_20260312_011638_Chrome.jpg", url: "https://heroyik.github.io/VocaJapones" }
+      { src: "Screenshot_20260312_011638_Chrome.jpg", url: "https://heroyik.github.io/kamivoca" }
     ];
 
     // Fisher-Yates shuffle
@@ -74,6 +75,56 @@ document.addEventListener("DOMContentLoaded", () => {
           window.location.href = data.url;
         });
       }
+    });
+  }
+
+  if (heroCollage) {
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let settleTimer;
+
+    const explode = () => {
+      window.clearTimeout(settleTimer);
+      heroCollage.classList.add("is-exploded");
+    };
+
+    const settle = () => {
+      window.clearTimeout(settleTimer);
+      settleTimer = window.setTimeout(() => {
+        heroCollage.classList.remove("is-exploded");
+      }, 1800);
+    };
+
+    if (!mediaQuery.matches) {
+      window.setTimeout(explode, 350);
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                explode();
+              }
+            });
+          },
+          { threshold: 0.4 }
+        );
+
+        observer.observe(heroCollage);
+      }
+    }
+
+    heroCollage.addEventListener("mouseenter", explode);
+    heroCollage.addEventListener("mouseleave", settle);
+    heroCollage.addEventListener("focusin", explode);
+    heroCollage.addEventListener("focusout", settle);
+    heroCollage.addEventListener("click", () => {
+      if (mediaQuery.matches) {
+        heroCollage.classList.toggle("is-exploded");
+        return;
+      }
+
+      explode();
+      settle();
     });
   }
 });

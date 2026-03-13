@@ -248,6 +248,11 @@ main > section {
   perspective: 2000px; /* Strong perspective for 3D effect */
 }
 
+.hero-collage:focus-visible {
+  outline: 2px solid rgba(28, 27, 24, 0.5);
+  outline-offset: 12px;
+}
+
 .hero-collage::after {
   display: none;
 }
@@ -288,17 +293,27 @@ main > section {
 .tile-i { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(120px); z-index: 2; }
 .tile-j { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(135px); z-index: 1; }
 
-/* Exploded state (Hover on parent) */
-.hero-collage:hover .tile-a { transform: translate(-140%, -120%) rotateX(10deg) rotateZ(-5deg) translateZ(50px); }
-.hero-collage:hover .tile-b { transform: translate(-10%, -150%) rotateX(15deg) rotateZ(10deg) translateZ(100px); }
-.hero-collage:hover .tile-c { transform: translate(110%, -100%) rotateX(10deg) rotateZ(-12deg) translateZ(30px); }
-.hero-collage:hover .tile-d { transform: translate(-160%, 10%) rotateX(12deg) rotateZ(8deg) translateZ(120px); }
-.hero-collage:hover .tile-e { transform: translate(-20%, -30%) rotateX(0deg) rotateZ(0deg) translateZ(200px); }
-.hero-collage:hover .tile-f { transform: translate(130%, 10%) rotateX(-10deg) rotateZ(5deg) translateZ(80px); }
-.hero-collage:hover .tile-g { transform: translate(-120%, 110%) rotateX(-15deg) rotateZ(-10deg) translateZ(40px); }
-.hero-collage:hover .tile-h { transform: translate(10%, 130%) rotateX(10deg) rotateZ(12deg) translateZ(110px); }
-.hero-collage:hover .tile-i { transform: translate(140%, 120%) rotateX(-12deg) rotateZ(-8deg) translateZ(60px); }
-.hero-collage:hover .tile-j { transform: translate(0%, 0%) rotateX(0deg) rotateZ(0deg) translateZ(300px); opacity: 0.9; }
+/* Exploded state */
+.hero-collage:hover .tile-a,
+.hero-collage.is-exploded .tile-a { transform: translate(-140%, -120%) rotateX(10deg) rotateZ(-5deg) translateZ(50px); }
+.hero-collage:hover .tile-b,
+.hero-collage.is-exploded .tile-b { transform: translate(-10%, -150%) rotateX(15deg) rotateZ(10deg) translateZ(100px); }
+.hero-collage:hover .tile-c,
+.hero-collage.is-exploded .tile-c { transform: translate(110%, -100%) rotateX(10deg) rotateZ(-12deg) translateZ(30px); }
+.hero-collage:hover .tile-d,
+.hero-collage.is-exploded .tile-d { transform: translate(-160%, 10%) rotateX(12deg) rotateZ(8deg) translateZ(120px); }
+.hero-collage:hover .tile-e,
+.hero-collage.is-exploded .tile-e { transform: translate(-20%, -30%) rotateX(0deg) rotateZ(0deg) translateZ(200px); }
+.hero-collage:hover .tile-f,
+.hero-collage.is-exploded .tile-f { transform: translate(130%, 10%) rotateX(-10deg) rotateZ(5deg) translateZ(80px); }
+.hero-collage:hover .tile-g,
+.hero-collage.is-exploded .tile-g { transform: translate(-120%, 110%) rotateX(-15deg) rotateZ(-10deg) translateZ(40px); }
+.hero-collage:hover .tile-h,
+.hero-collage.is-exploded .tile-h { transform: translate(10%, 130%) rotateX(10deg) rotateZ(12deg) translateZ(110px); }
+.hero-collage:hover .tile-i,
+.hero-collage.is-exploded .tile-i { transform: translate(140%, 120%) rotateX(-12deg) rotateZ(-8deg) translateZ(60px); }
+.hero-collage:hover .tile-j,
+.hero-collage.is-exploded .tile-j { transform: translate(0%, 0%) rotateX(0deg) rotateZ(0deg) translateZ(300px); opacity: 0.9; }
 
 .tile:hover {
   filter: saturate(1.2) contrast(1.1);
