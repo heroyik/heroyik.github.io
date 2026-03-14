@@ -565,6 +565,18 @@ footer a {
     grid-template-rows: repeat(4, 70px);
   }
 
+  /* Mobile-specific exploded coordinates (for Galaxy S25 / 360px width) */
+  .hero-collage.is-exploded .tile-a { transform: translate(-80%, -90%) rotateX(10deg) rotateZ(-5deg) translateZ(30px); }
+  .hero-collage.is-exploded .tile-b { transform: translate(-5%, -110%) rotateX(15deg) rotateZ(10deg) translateZ(60px); }
+  .hero-collage.is-exploded .tile-c { transform: translate(65%, -70%) rotateX(10deg) rotateZ(-12deg) translateZ(20px); }
+  .hero-collage.is-exploded .tile-d { transform: translate(-90%, 5%) rotateX(12deg) rotateZ(8deg) translateZ(70px); }
+  .hero-collage.is-exploded .tile-e { transform: translate(-10%, -20%) rotateX(0deg) rotateZ(0deg) translateZ(120px); }
+  .hero-collage.is-exploded .tile-f { transform: translate(50%, 5%) rotateX(-10deg) rotateZ(5deg) translateZ(50px); }
+  .hero-collage.is-exploded .tile-g { transform: translate(-70%, 80%) rotateX(-15deg) rotateZ(-10deg) translateZ(25px); }
+  .hero-collage.is-exploded .tile-h { transform: translate(5%, 90%) rotateX(10deg) rotateZ(12deg) translateZ(65px); }
+  .hero-collage.is-exploded .tile-i { transform: translate(55%, 75%) rotateX(-12deg) rotateZ(-8deg) translateZ(35px); }
+  .hero-collage.is-exploded .tile-j { transform: translate(0%, 0%) rotateX(0deg) rotateZ(0deg) translateZ(180px); opacity: 0.9; }
+
   .panel {
     padding: 1.6rem;
   }
