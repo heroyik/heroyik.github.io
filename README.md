@@ -64,7 +64,7 @@ All npm vulnerabilities resolved as of v2.0.0:
 
 | App | Status | Link |
 | :--- | :--- | :--- |
-| **VocaJapones** | Live | [heroyik.github.io/VocaJapones](https://heroyik.github.io/VocaJapones) |
+| **KamiVoca** | New | [heroyik.github.io/kamivoca](https://heroyik.github.io/kamivoca) |
 
 ### 🇪🇸 Spanish
 
