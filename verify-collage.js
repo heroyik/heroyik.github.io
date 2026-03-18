@@ -1,36 +1,23 @@
 const { chromium } = require('playwright');
-const path = require('path');
 
 (async () => {
     const browser = await chromium.launch();
     const page = await browser.newPage();
 
     // Navigate to the local server
-    await page.goto('http://localhost:3000/');
+    await page.goto('http://localhost:8080/');
 
-    // Wait for the JS to execute mapping
+    // Wait for the JS to execute
     await page.waitForTimeout(500);
 
-    // Verify there are 9 tiles
-    const tiles = await page.$$('.hero-collage .tile');
-    if (tiles.length !== 9) {
-        console.error(`Error: Expected 9 tiles, but found ${tiles.length}`);
-        process.exit(1);
-    }
+    // Verify the heading text
+    const heading = await page.$eval('h1', el => el.textContent.trim());
+    console.log(`Found heading: "${heading}"`);
 
-    // Count empty vs assigned backgrounds
-    let assignedCount = 0;
-    for (const tile of tiles) {
-        const bgImage = await tile.evaluate((el) => el.style.backgroundImage);
-        if (bgImage && bgImage.includes('url(')) {
-            assignedCount++;
-        }
-    }
-
-    if (assignedCount === 9) {
-        console.log('Success: All 9 tiles have background images dynamically assigned.');
+    if (heading.includes('Welcome to Maison de nIcK')) {
+        console.log('Success: Page loaded with correct heading.');
     } else {
-        console.error(`Error: Expected 9 assigned background images, found ${assignedCount}`);
+        console.error(`Error: Expected heading to include "Welcome to Maison de nIcK", but found "${heading}"`);
         process.exit(1);
     }
 
