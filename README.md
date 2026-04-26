@@ -27,7 +27,7 @@ Comprehensive security update addressing vulnerabilities and modernizing the cod
 | Feature | Detail |
 | :--- | :--- |
 | **Security** | Fixed CVE-2026-41311 by upgrading `liquidjs` to `10.25.7`. |
-| **Protocols** | Migrated Netlify links from insecure `http` to `https`. |
+| **Protocols** | Migrated all project links to secure `https`. |
 | **Standards** | Modernized legacy JavaScript by replacing `var` with `let/const`. |
 | **Integrity** | Added Subresource Integrity (SRI) to external scripts. |
 | **Linting** | Resolved `markdownlint` compliance issues in `README.md`. |

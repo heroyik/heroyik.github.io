@@ -14,10 +14,10 @@ const { chromium } = require('playwright');
     const heading = await page.$eval('h1', el => el.textContent.trim());
     console.log(`Found heading: "${heading}"`);
 
-    if (heading.includes('No cap, sky is the limit')) {
+    if (heading.includes('Maison de nIcK')) {
         console.log('Success: Page loaded with correct heading.');
     } else {
-        console.error(`Error: Expected heading to include "No cap, sky is the limit", but found "${heading}"`);
+        console.error(`Error: Expected heading to include "Maison de nIcK", but found "${heading}"`);
         process.exit(1);
     }
 

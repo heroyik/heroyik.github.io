@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ pageTitle or siteData.name }}</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; model-src 'self' *;">
     
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:ital,wght@0,300;0,700;1,300&family=Orbitron:wght@500&family=Roboto+Mono&family=Spectral:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/vendor/fonts.css">
     
     <!-- Styles -->
     <link rel="stylesheet" href="/assets/css/styles.css">
@@ -26,6 +25,6 @@
 
     <!-- Scripts -->
     <script src="/assets/js/app.js"></script>
-    <script type="module" src="https://unpkg.com/@google/model-viewer@4.2.0/dist/model-viewer.min.js" integrity="sha384-vxk4VLyK9yGAWdkf1mZ5Mps7pXW5Zfa3RypRIxvYNM9A9dhz44mM3mfIN1Bajb3B" crossorigin="anonymous"></script>
+    <script type="module" src="/assets/vendor/model-viewer.min.js"></script>
   </body>
 </html>
