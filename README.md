@@ -1,21 +1,36 @@
-# 🏛️ Maison de nIcK — v2.2.0
+<!-- markdownlint-disable MD013 -->
+# 🏛️ Maison de nIcK — v2.2.1
 
 > A digital portfolio by **nIcK** — showcasing AI-driven language apps, 3D
 > fashion design, woodwork, market tools, and interactive web experiences,
 > all built without formal design or coding credentials, powered by AI.
 
-## 🚀 What's New in v2.2.0
+## 💥 Hero Collage Refinements
 
-### 💥 Hero Collage Refinements
-
-The 3D Exploding View Hero Collage has been polished for a smoother user experience.
+The 3D Exploding View Hero Collage has been polished.
 
 | Feature | Detail |
 | :--- | :--- |
-| **Hover Interaction** | Restricted tiles' "scale-up" hover effect to only apply in the non-exploded state. |
-| **Exploration UX** | Removed distracting z-index jumps and scaling when exploring the exploded collage. |
-| **Accessibility** | Tiles converted from `div` to `<a>` tags for native link behavior and better semantic structure. |
-| **Mobile Sync** | Full compatibility with Galaxy S25 and iPhone viewport sizes. |
+| **Hover Interaction** | Restricted tiles' hover effect to non-exploded state. |
+| **Exploration UX** | Removed z-index jumps when exploring exploded collage. |
+| **Accessibility** | Tiles converted from `div` to `<a>` tags. |
+| **Mobile Sync** | Full compatibility with Galaxy S25 and iPhone viewports. |
+
+---
+
+## 🚀 What's New in v2.2.1
+
+### 🔒 Security & Modernization Fixes
+
+Comprehensive security update addressing vulnerabilities and modernizing the codebase.
+
+| Feature | Detail |
+| :--- | :--- |
+| **Security** | Fixed CVE-2026-41311 by upgrading `liquidjs` to `10.25.7`. |
+| **Protocols** | Migrated Netlify links from insecure `http` to `https`. |
+| **Standards** | Modernized legacy JavaScript by replacing `var` with `let/const`. |
+| **Integrity** | Added Subresource Integrity (SRI) to external scripts. |
+| **Linting** | Resolved `markdownlint` compliance issues in `README.md`. |
 
 ---
 
@@ -28,10 +43,10 @@ The homepage hero collage was transformed from a 2D grid into a premium, interac
 | Feature | Detail |
 | :--- | :--- |
 | **Visual Style** | Glassmorphic 3D isometric stack |
-| **Interaction** | Smooth "Exploding" animation on hover spread across the Z-axis |
-| **Connectivity** | Tiles are clickable in both stacked and exploded states |
-| **Technology** | Pure CSS 3D Transforms (`perspective`, `translateZ`, `rotate`) |
-| **Responsiveness** | Optimized for Desktop, Tablet, and Mobile (Galaxy S25/iPhone) |
+| **Interaction** | Smooth "Exploding" animation spread across the Z-axis. |
+| **Connectivity** | Tiles are clickable in both stacked and exploded states. |
+| **Technology** | Pure CSS 3D Transforms (`perspective`, `translateZ`, `rotate`). |
+| **Responsiveness** | Optimized for Desktop, Tablet, and Mobile devices. |
 
 ---
 
@@ -121,8 +136,8 @@ the repo root. Published path: `.` (configured in `netlify.toml`).
 
 ## 🔄 Revision History
 
-| Version | What Changed |
-| :--- | :--- |
+| **v2.2.1** | Fixed liquidjs CVE; Migrated HTTP to HTTPS; SRI added; |
+| | Modernized legacy JS; Resolved markdownlint MD013 errors; |
 | **v2.2.0** | Tiles converted to `<a>` tags; Hover effects removed in exploded state; |
 | | Improved exploration UX and mobile linking reliability; |
 | **v2.1.0** | 3D Exploding View Hero Collage implemented; 10-tile layout; |

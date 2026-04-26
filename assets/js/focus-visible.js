@@ -12,11 +12,11 @@
    * @see https://github.com/WICG/focus-visible
    */
   function applyFocusVisiblePolyfill(scope) {
-    var hadKeyboardEvent = true;
-    var hadFocusVisibleRecently = false;
-    var hadFocusVisibleRecentlyTimeout = null;
+    let hadKeyboardEvent = true;
+    let hadFocusVisibleRecently = false;
+    let hadFocusVisibleRecentlyTimeout = null;
 
-    var inputTypesWhitelist = {
+    let inputTypesWhitelist = {
       text: true,
       search: true,
       url: true,
@@ -59,8 +59,8 @@
      * @return {boolean}
      */
     function focusTriggersKeyboardModality(el) {
-      var type = el.type;
-      var tagName = el.tagName;
+      let type = el.type;
+      let tagName = el.tagName;
 
       if (tagName == 'INPUT' && inputTypesWhitelist[type] && !el.readOnly) {
         return true;
@@ -290,7 +290,7 @@
 
     // Notify interested libraries of the polyfill's presence, in case the
     // polyfill was loaded lazily:
-    var event;
+    let event;
 
     try {
       event = new CustomEvent('focus-visible-polyfill-ready');
