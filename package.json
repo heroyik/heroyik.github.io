@@ -14,9 +14,7 @@
     "build": "eleventy",
     "start": "eleventy --serve"
   },
-  "dependencies": {
-    "@11ty/eleventy": "^3.1.5"
-  },
+  "dependencies": {},
   "overrides": {
     "liquidjs": "10.25.7",
     "minimatch": "10.2.3",
@@ -26,6 +24,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@11ty/eleventy": "^3.1.5",
     "playwright": "^1.58.2"
   }
 }
