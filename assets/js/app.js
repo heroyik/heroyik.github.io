@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const heroTiles = document.querySelectorAll(".hero-collage .tile");
   if (heroTiles.length > 0) {
     const imageData = [
+      { src: "llem_preview.png", url: "https://github.com/heroyik/llem" },
       { src: "bg.jpg", url: "https://heroyik.github.io/fsijc" },
       {
         src: "Screenshot_20260223_142955_Chrome.jpg",
