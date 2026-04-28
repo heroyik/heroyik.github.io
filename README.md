@@ -153,6 +153,8 @@ the repo root. Published path: `.` (configured in `netlify.toml`).
 
 ## 🔄 Revision History
 
+| Version | Detail |
+| :--- | :--- |
 | **v2.3.0** | Integrated LLeM flagship; Pinned LLeM to front-most tile (`tile-j`); |
 | | Synchronized z-index with 3D depth; Updated LLeM "Airplane" story; |
 | **v2.2.1** | Fixed liquidjs CVE; Migrated HTTP to HTTPS; SRI added; |
