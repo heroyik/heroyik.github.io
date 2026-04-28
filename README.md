@@ -1,13 +1,24 @@
 <!-- markdownlint-disable MD013 -->
-# 🏛️ Maison de nIcK — v2.2.1
+# 🏛️ Maison de nIcK — v2.3.0
 
 > A digital portfolio by **nIcK** — showcasing AI-driven language apps, 3D
 > fashion design, woodwork, market tools, and interactive web experiences,
 > all built without formal design or coding credentials, powered by AI.
 
-## 💥 Hero Collage Refinements
+## 🛫 LLeM & Front-Most Pinning (v2.3.0)
 
-The 3D Exploding View Hero Collage has been polished.
+The portfolio has been upgraded to highlight **LLeM**, the first public release flagship.
+
+| Feature | Detail |
+| :--- | :--- |
+| **Project Integration** | Added **LLeM** (Local Large Language Model) assistant to the flagship grid. |
+| **Front-Most Pinning** | `app.js` modified to pin LLeM to `tile-j` (the front-most 3D layer). |
+| **Z-Index depth fix** | Synchronized `z-index` with `translateZ` to prevent background clipping. |
+| **Airplane Story** | Updated project description to reflect the "Built for 30,000ft" theme. |
+
+---
+
+## 💥 Hero Collage Refinements (v2.2.0)
 
 | Feature | Detail |
 | :--- | :--- |
@@ -75,6 +86,12 @@ All npm vulnerabilities resolved as of v2.0.0:
 
 ## 💻 All Projects
 
+### 🤖 AI Development
+
+| App | Status | Link |
+| :--- | :--- | :--- |
+| **LLeM** | **NEW** | [github.com/heroyik/llem](https://github.com/heroyik/llem) |
+
 ### 🇯🇵 Japanese
 
 | App | Status | Link |
@@ -136,6 +153,8 @@ the repo root. Published path: `.` (configured in `netlify.toml`).
 
 ## 🔄 Revision History
 
+| **v2.3.0** | Integrated LLeM flagship; Pinned LLeM to front-most tile (`tile-j`); |
+| | Synchronized z-index with 3D depth; Updated LLeM "Airplane" story; |
 | **v2.2.1** | Fixed liquidjs CVE; Migrated HTTP to HTTPS; SRI added; |
 | | Modernized legacy JS; Resolved markdownlint MD013 errors; |
 | **v2.2.0** | Tiles converted to `<a>` tags; Hover effects removed in exploded state; |

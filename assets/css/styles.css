@@ -294,16 +294,16 @@ main > section {
 
 /* Stacked state (Default) */
 /* Images are stacked with a slight rotation and offset */
-.tile-a { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(0); z-index: 10; }
-.tile-b { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(15px); z-index: 9; }
-.tile-c { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(30px); z-index: 8; }
-.tile-d { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(45px); z-index: 7; }
-.tile-e { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(60px); z-index: 6; }
-.tile-f { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(75px); z-index: 5; }
-.tile-g { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(90px); z-index: 4; }
-.tile-h { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(105px); z-index: 3; }
-.tile-i { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(120px); z-index: 2; }
-.tile-j { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(135px); z-index: 1; }
+.tile-a { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(0); z-index: 1; }
+.tile-b { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(15px); z-index: 2; }
+.tile-c { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(30px); z-index: 3; }
+.tile-d { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(45px); z-index: 4; }
+.tile-e { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(60px); z-index: 5; }
+.tile-f { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(75px); z-index: 6; }
+.tile-g { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(90px); z-index: 7; }
+.tile-h { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(105px); z-index: 8; }
+.tile-i { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(120px); z-index: 9; }
+.tile-j { transform: translate(-50%, -50%) rotateX(45deg) rotateZ(-35deg) translateZ(135px); z-index: 10; }
 
 /* Exploded state */
 .hero-collage.is-exploded .tile-a { transform: translate(-140%, -120%) rotateX(10deg) rotateZ(-5deg) translateZ(50px); }

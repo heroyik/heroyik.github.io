@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { src: "Screenshot_20260312_011638_Chrome.jpg", url: "https://heroyik.github.io/kamivoca" },
     ];
 
-    // Ensure LLeM is always included: pin it, shuffle the rest, and take the top 9
+    // Ensure LLeM is always at the front: pin it to the last tile (tile-j)
     const pinned = imageData[0];
     const pool = imageData.slice(1);
     
@@ -64,8 +64,8 @@ document.addEventListener("DOMContentLoaded", () => {
       [pool[i], pool[j]] = [pool[j], pool[i]];
     }
 
-    // Combine pinned item with the first 9 from the shuffled pool
-    const finalSelection = [pinned, ...pool.slice(0, 9)];
+    // Combine 9 items from pool and put pinned item at the very end (tile-j)
+    const finalSelection = [...pool.slice(0, 9), pinned];
 
     // Assign to tiles
     heroTiles.forEach((tile, index) => {
