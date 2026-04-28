@@ -54,16 +54,23 @@ document.addEventListener("DOMContentLoaded", () => {
       { src: "Screenshot_20260312_011638_Chrome.jpg", url: "https://heroyik.github.io/kamivoca" },
     ];
 
-    // Fisher-Yates shuffle
-    for (let i = imageData.length - 1; i > 0; i--) {
+    // Ensure LLeM is always included: pin it, shuffle the rest, and take the top 9
+    const pinned = imageData[0];
+    const pool = imageData.slice(1);
+    
+    // Fisher-Yates shuffle for the pool
+    for (let i = pool.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [imageData[i], imageData[j]] = [imageData[j], imageData[i]];
+      [pool[i], pool[j]] = [pool[j], pool[i]];
     }
 
-    // Assign shuffled images and URLs to tiles
+    // Combine pinned item with the first 9 from the shuffled pool
+    const finalSelection = [pinned, ...pool.slice(0, 9)];
+
+    // Assign to tiles
     heroTiles.forEach((tile, index) => {
-      if (index < imageData.length) {
-        const data = imageData[index];
+      if (index < finalSelection.length) {
+        const data = finalSelection[index];
         tile.style.backgroundImage = `url('/assets/images/${data.src}')`;
         tile.href = data.url;
         tile.style.cursor = "pointer";
