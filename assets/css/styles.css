@@ -324,6 +324,12 @@ main > section {
   transform: scale(1.1) !important;
 }
 
+/* Front-most tile (first card) gets a subtle glow to stand out */
+.tile[data-front] {
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.3), 0 10px 30px rgba(28, 27, 24, 0.15);
+  border-color: rgba(255, 215, 0, 0.5);
+}
+
 .panel {
   background: var(--card-bg);
   border-radius: var(--border-radius);

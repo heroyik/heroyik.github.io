@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const heroTiles = document.querySelectorAll(".hero-collage .tile");
   if (heroTiles.length > 0) {
     const imageData = [
+      { src: "redgold_preview.png", url: "https://heroyik.github.io/redgold/" },
       { src: "llem_preview.png", url: "https://github.com/heroyik/llem" },
       { src: "bg.jpg", url: "https://heroyik.github.io/fsijc" },
       {
@@ -54,26 +55,34 @@ document.addEventListener("DOMContentLoaded", () => {
       { src: "Screenshot_20260312_011638_Chrome.jpg", url: "https://heroyik.github.io/kamivoca" },
     ];
 
-    // Ensure LLeM is always at the front: pin it to the last tile (tile-j)
-    const pinned = imageData[0];
-    const pool = imageData.slice(1);
+    // --- Collage Tile Assignment ---
+    // The first card in the grid (imageData[0]) is ALWAYS on the front-most tile.
+    // tile-j has the highest z-index (10) and stays center in exploded view.
+    const frontImage = imageData[0];
+    const rest = imageData.slice(1);
     
-    // Fisher-Yates shuffle for the pool
-    for (let i = pool.length - 1; i > 0; i--) {
+    // Fisher-Yates shuffle for the rest
+    for (let i = rest.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [pool[i], pool[j]] = [pool[j], pool[i]];
+      [rest[i], rest[j]] = [rest[j], rest[i]];
     }
 
-    // Combine 9 items from pool and put pinned item at the very end (tile-j)
-    const finalSelection = [...pool.slice(0, 9), pinned];
+    // First 9 tiles (a-i) get shuffled images; last tile (j) = front-most = first card
+    const assignments = [...rest.slice(0, 9), frontImage];
 
-    // Assign to tiles
     heroTiles.forEach((tile, index) => {
-      if (index < finalSelection.length) {
-        const data = finalSelection[index];
+      if (index < assignments.length) {
+        const data = assignments[index];
         tile.style.backgroundImage = `url('/assets/images/${data.src}')`;
         tile.href = data.url;
         tile.style.cursor = "pointer";
+
+        // Mark the front tile (tile-j) with a data attribute for visual distinction
+        if (index === assignments.length - 1) {
+          tile.dataset.front = "true";
+        } else {
+          delete tile.dataset.front;
+        }
 
         // Remove old listeners if any
         const newTile = tile.cloneNode(true);
