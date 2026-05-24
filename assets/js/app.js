@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const heroTiles = document.querySelectorAll(".hero-collage .tile");
   if (heroTiles.length > 0) {
     const imageData = [
-      { src: "macsnow_preview.png", url: "https://heroyik.github.io/macsnow" },
+      { src: "macsnow_preview.png", url: "https://github.com/heroyik/macsnow" },
       { src: "redgold_preview.png", url: "https://heroyik.github.io/redgold/" },
       { src: "llem_preview.png", url: "https://github.com/heroyik/llem" },
       { src: "bg.jpg", url: "https://heroyik.github.io/fsijc" },
