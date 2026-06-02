@@ -1,9 +1,23 @@
 <!-- markdownlint-disable MD013 -->
-# 🏛️ Maison de nIcK — v2.3.0
+# 🏛️ Maison de nIcK — v2.4.0
 
 > A digital portfolio by **nIcK** — showcasing AI-driven language apps, 3D
 > fashion design, woodwork, market tools, and interactive web experiences,
 > all built without formal design or coding credentials, powered by AI.
+
+## ❄️ MacSnow & 13-Card Hero Collage (v2.4.0)
+
+The portfolio now highlights **MacSnow** as the front-most hero collage card
+and expands the project surface to 13 live cards.
+
+| Feature | Detail |
+| :--- | :--- |
+| **MacSnow Integration** | Added **MacSnow**, a macOS snow-and-Santa desktop animation project, as the pinned front card. |
+| **13-Card Collage Pool** | Hero collage project pool now includes MacSnow, RedGold, LLeM, fashion, language, market, and play projects. |
+| **Card Descriptions** | README now documents every active card with category, purpose, and link. |
+| **Security Refresh** | `liquidjs` now resolves to `10.27.0`; `npm audit` reports 0 vulnerabilities. |
+
+---
 
 ## 🛫 LLeM & Front-Most Pinning (v2.3.0)
 
@@ -37,7 +51,7 @@ Comprehensive security update addressing vulnerabilities and modernizing the cod
 
 | Feature | Detail |
 | :--- | :--- |
-| **Security** | Fixed CVE-2026-41311 by upgrading `liquidjs` to `10.25.7`. |
+| **Security** | Fixed CVE-2026-41311 by upgrading `liquidjs` to `10.25.7`. Latest lockfile override resolves `liquidjs` to `10.27.0`. |
 | **Protocols** | Migrated all project links to secure `https`. |
 | **Standards** | Modernized legacy JavaScript by replacing `var` with `let/const`. |
 | **Integrity** | Added Subresource Integrity (SRI) to external scripts. |
@@ -61,14 +75,31 @@ The homepage hero collage was transformed from a 2D grid into a premium, interac
 
 ---
 
-### 🎨 Homepage Hero Collage — 10 Tiles
+### 🎨 Homepage Hero Collage — 13 Project Cards
 
-The hero collage on the homepage (`index.html`) consists of 10 dynamic
-tiles representing flagship projects.
+The hero collage on the homepage is rendered with 10 visible 3D tiles, fed by
+a 13-card project pool from `assets/js/app.js`.
 
-- 10 tiles (`tile-a` through `tile-j`) positioned in a 3D isometric stack.
-- Each tile mapped to a project screenshot and URL dynamically.
-- `verify-collage.js` (Playwright test) updated to assert 10 tiles.
+- 10 visible tiles (`tile-a` through `tile-j`) positioned in a 3D isometric stack.
+- 13 project cards available for shuffled assignment.
+- `MacSnow` is pinned to the front-most tile (`tile-j`).
+- Each tile maps to a project screenshot and URL dynamically.
+
+| Card | Category | Description | Link |
+| :--- | :--- | :--- | :--- |
+| **MacSnow** | macOS | Snow, Santa, gifts, scenery, and desktop animation for macOS. | [github.com/heroyik/macsnow](https://github.com/heroyik/macsnow) |
+| **RedGold** | Language | HSK4 Chinese learning sidekick with grammar and speaking practice energy. | [heroyik.github.io/redgold](https://heroyik.github.io/redgold/) |
+| **LLeM** | AI Development | Local-first AI coding assistant for VS Code and Cursor, built for offline use. | [github.com/heroyik/llem](https://github.com/heroyik/llem) |
+| **Set-in Jacket** | Fashion / 3D | CLO3D-inspired garment experiment motivated by camouflage fatigues. | [heroyik.github.io/fsijc](https://heroyik.github.io/fsijc) |
+| **HOLA ESPAÑOL A1/A2** | Spanish | DELE A1/A2 Spanish learning app for English-fluent Koreans. | [heroyik.github.io/hola-a1a2](https://heroyik.github.io/hola-a1a2/) |
+| **HolaVoca 2.0** | Spanish | Rebooted Spanish vocabulary app with a lighter, more playful practice flow. | [heroyik.github.io/holavoca/v2](https://heroyik.github.io/holavoca/v2) |
+| **3D Concept Shop** | Flagship | Retail, spatial, and fashion ideas collected into one 3D concept space. | [heroyik.github.io/4SeasonsShop](https://heroyik.github.io/4SeasonsShop) |
+| **Colloquial English** | English | Street-level English practice with practical, direct phrasing. | [heroyik.github.io/col_eng](https://heroyik.github.io/col_eng) |
+| **Daily US Stock Briefing** | Markets | Daily market signal and US stock briefing surface. | [heroyik.github.io/finrep](https://heroyik.github.io/finrep) |
+| **Tetris** | Play | Minimal playable Tetris experiment. | [heroyik.github.io/tetmin](https://heroyik.github.io/tetmin) |
+| **Spanish Verb Shadowing** | Spanish | Native-audio Spanish verb shadowing coach with Gemini Live. | [shadowing coach](https://spanish-shadowing-coach-623754443070.us-west1.run.app/) |
+| **VozViva** | Spanish | Spanish tense intuition and native rhythm training app. | [vozviva](https://vozviva-spanish-mastery-mp3-671064663335.us-west1.run.app/) |
+| **KamiVoca** | Japanese | Minimalist Japanese vocabulary app with real-world utility. | [heroyik.github.io/kamivoca](https://heroyik.github.io/kamivoca) |
 
 ---
 
@@ -91,6 +122,18 @@ All npm vulnerabilities resolved as of v2.0.0:
 | App | Status | Link |
 | :--- | :--- | :--- |
 | **LLeM** | **NEW** | [github.com/heroyik/llem](https://github.com/heroyik/llem) |
+
+### ❄️ macOS
+
+| App | Status | Link |
+| :--- | :--- | :--- |
+| **MacSnow** | **NEW** | [github.com/heroyik/macsnow](https://github.com/heroyik/macsnow) |
+
+### 🇨🇳 Chinese
+
+| App | Status | Link |
+| :--- | :--- | :--- |
+| **RedGold** | DEV | [heroyik.github.io/redgold](https://heroyik.github.io/redgold/) |
 
 ### 🇯🇵 Japanese
 
@@ -155,6 +198,9 @@ the repo root. Published path: `.` (configured in `netlify.toml`).
 
 | Version | Detail |
 | :--- | :--- |
+| **v2.4.0** | Added MacSnow as the front-most hero collage card; |
+| | Documented the full 13-card collage pool and added MacSnow/RedGold project rows; |
+| | Updated security notes for `liquidjs@10.27.0` and 0-vulnerability audit; |
 | **v2.3.0** | Integrated LLeM flagship; Pinned LLeM to front-most tile (`tile-j`); |
 | | Synchronized z-index with 3D depth; Updated LLeM "Airplane" story; |
 | **v2.2.1** | Fixed liquidjs CVE; Migrated HTTP to HTTPS; SRI added; |
