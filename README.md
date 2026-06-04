@@ -87,19 +87,19 @@ a 13-card project pool from `assets/js/app.js`.
 
 | Card | Category | Description | Link |
 | :--- | :--- | :--- | :--- |
-| **MacSnow** | macOS | Snow, Santa, gifts, scenery, and desktop animation for macOS. | [github.com/heroyik/macsnow](https://github.com/heroyik/macsnow) |
-| **RedGold** | Language | HSK4 Chinese learning sidekick with grammar and speaking practice energy. | [heroyik.github.io/redgold](https://heroyik.github.io/redgold/) |
-| **LLeM** | AI Development | Local-first AI coding assistant for VS Code and Cursor, built for offline use. | [github.com/heroyik/llem](https://github.com/heroyik/llem) |
+| **MacSnow** | macOS ❄️ | Snow, Santa, gifts, scenery, and desktop animation for macOS. 🎄 | [github.com/heroyik/macsnow](https://github.com/heroyik/macsnow) |
+| **RedGold** | Language 🀄 | HSK4 Chinese learning sidekick with grammar and speaking practice energy. 🐉🔥 | [heroyik.github.io/redgold](https://heroyik.github.io/redgold/) |
+| **LLeM** | AI Development ✈️ | Local-first AI coding assistant for VS Code and Cursor, built for offline use. 🤖 | [github.com/heroyik/llem](https://github.com/heroyik/llem) |
 | **Set-in Jacket** | Fashion / 3D | CLO3D-inspired garment experiment motivated by camouflage fatigues. | [heroyik.github.io/fsijc](https://heroyik.github.io/fsijc) |
-| **HOLA ESPAÑOL A1/A2** | Spanish | DELE A1/A2 Spanish learning app for English-fluent Koreans. | [heroyik.github.io/hola-a1a2](https://heroyik.github.io/hola-a1a2/) |
-| **HolaVoca 2.0** | Spanish | Rebooted Spanish vocabulary app with a lighter, more playful practice flow. | [heroyik.github.io/holavoca/v2](https://heroyik.github.io/holavoca/v2) |
-| **3D Concept Shop** | Flagship | Retail, spatial, and fashion ideas collected into one 3D concept space. | [heroyik.github.io/4SeasonsShop](https://heroyik.github.io/4SeasonsShop) |
-| **Colloquial English** | English | Street-level English practice with practical, direct phrasing. | [heroyik.github.io/col_eng](https://heroyik.github.io/col_eng) |
-| **Daily US Stock Briefing** | Markets | Daily market signal and US stock briefing surface. | [heroyik.github.io/finrep](https://heroyik.github.io/finrep) |
-| **Tetris** | Play | Minimal playable Tetris experiment. | [heroyik.github.io/tetmin](https://heroyik.github.io/tetmin) |
-| **Spanish Verb Shadowing** | Spanish | Native-audio Spanish verb shadowing coach with Gemini Live. | [shadowing coach](https://spanish-shadowing-coach-623754443070.us-west1.run.app/) |
-| **VozViva** | Spanish | Spanish tense intuition and native rhythm training app. | [vozviva](https://vozviva-spanish-mastery-mp3-671064663335.us-west1.run.app/) |
-| **KamiVoca** | Japanese | Minimalist Japanese vocabulary app with real-world utility. | [heroyik.github.io/kamivoca](https://heroyik.github.io/kamivoca) |
+| **HOLA ESPAÑOL A1/A2** | Spanish 🇪🇸 | DELE A1/A2 Spanish learning app for English-fluent Koreans. 🔥 | [heroyik.github.io/hola-a1a2](https://heroyik.github.io/hola-a1a2/) |
+| **HolaVoca 2.0** | Spanish 🎯 | Rebooted Spanish vocabulary app with a lighter, more playful practice flow. 💃 | [heroyik.github.io/holavoca/v2](https://heroyik.github.io/holavoca/v2) |
+| **3D Concept Shop** | Flagship 🛍️ | Retail, spatial, and fashion ideas collected into one 3D concept space. 🏗️ | [heroyik.github.io/4SeasonsShop](https://heroyik.github.io/4SeasonsShop) |
+| **Colloquial English** | English 💬 | Street-level English practice with practical, direct phrasing. 🗽 | [heroyik.github.io/col_eng](https://heroyik.github.io/col_eng) |
+| **Daily US Stock Briefing** | Markets 📊 | Daily market signal and US stock briefing surface. 📈 | [heroyik.github.io/finrep](https://heroyik.github.io/finrep) |
+| **Tetris** | Play 🧩 | Minimal playable Tetris experiment. ⚡ | [heroyik.github.io/tetmin](https://heroyik.github.io/tetmin) |
+| **Spanish Verb Shadowing** | Spanish 🎙️ | Native-audio Spanish verb shadowing coach with Gemini Live. 💬 | [shadowing coach](https://spanish-shadowing-coach-623754443070.us-west1.run.app/) |
+| **VozViva** | Spanish 🎵 | Spanish tense intuition and native rhythm training app. 🇪🇸 | [vozviva](https://vozviva-spanish-mastery-mp3-671064663335.us-west1.run.app/) |
+| **KamiVoca** | Japanese 🇯🇵 | Minimalist Japanese vocabulary app with real-world utility. ✨ | [heroyik.github.io/kamivoca](https://heroyik.github.io/kamivoca) |
 
 ---
 
