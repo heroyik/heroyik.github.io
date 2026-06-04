@@ -133,7 +133,7 @@ All npm vulnerabilities resolved as of v2.0.0:
 
 | App | Status | Link |
 | :--- | :--- | :--- |
-| **RedGold** | DEV | [heroyik.github.io/redgold](https://heroyik.github.io/redgold/) |
+| **RedGold** | ⚡ LIVE | [heroyik.github.io/redgold](https://heroyik.github.io/redgold/) |
 
 ### 🇯🇵 Japanese
 
