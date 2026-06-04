@@ -12,22 +12,16 @@
   "version": "2.0.0",
   "scripts": {
     "build": "eleventy",
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "test": "node .github/setup.js"
   },
   "dependencies": {},
   "overrides": {
-    "liquidjs": "10.25.7",
-    "minimatch": "10.2.3",
-    "markdown-it": "~14.1.1",
-    "picomatch": "^4.0.4",
-    "brace-expansion": "^5.0.1"
+    "liquidjs": "10.27.0"
   },
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.5",
     "playwright": "^1.58.2"
-  },
-  "overrides": {
-    "liquidjs": "10.27.0"
   }
 }
