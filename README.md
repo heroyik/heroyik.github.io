@@ -1,19 +1,19 @@
 <!-- markdownlint-disable MD013 -->
-# 🏛️ Maison de nIcK — v2.4.0
+# 🏛️ Maison de nIcK — v2.4.1
 
 > A digital portfolio by **nIcK** — showcasing AI-driven language apps, 3D
 > fashion design, woodwork, market tools, and interactive web experiences,
 > all built without formal design or coding credentials, powered by AI.
 
-## ❄️ MacSnow & 13-Card Hero Collage (v2.4.0)
+## 🀄 QingVoca & 14-Card Hero Collage (v2.4.1)
 
-The portfolio now highlights **MacSnow** as the front-most hero collage card
-and expands the project surface to 13 live cards.
+The portfolio now highlights **QingVoca** as the front-most hero collage card
+and expands the project surface to 14 live cards.
 
 | Feature | Detail |
 | :--- | :--- |
-| **MacSnow Integration** | Added **MacSnow**, a macOS snow-and-Santa desktop animation project, as the pinned front card. |
-| **13-Card Collage Pool** | Hero collage project pool now includes MacSnow, RedGold, LLeM, fashion, language, market, and play projects. |
+| **QingVoca Integration** | Added **QingVoca**, a RedGold learner vocabulary app for HSK4 reps, as the pinned front card. |
+| **14-Card Collage Pool** | Hero collage project pool now includes QingVoca, MacSnow, RedGold, LLeM, fashion, language, market, and play projects. |
 | **Card Descriptions** | README now documents every active card with category, purpose, and link. |
 | **Security Refresh** | `liquidjs` now resolves to `10.27.0`; `npm audit` reports 0 vulnerabilities. |
 
@@ -75,18 +75,19 @@ The homepage hero collage was transformed from a 2D grid into a premium, interac
 
 ---
 
-### 🎨 Homepage Hero Collage — 13 Project Cards
+### 🎨 Homepage Hero Collage — 14 Project Cards
 
 The hero collage on the homepage is rendered with 10 visible 3D tiles, fed by
-a 13-card project pool from `assets/js/app.js`.
+a 14-card project pool from `assets/js/app.js`.
 
 - 10 visible tiles (`tile-a` through `tile-j`) positioned in a 3D isometric stack.
-- 13 project cards available for shuffled assignment.
-- `MacSnow` is pinned to the front-most tile (`tile-j`).
+- 14 project cards available for shuffled assignment.
+- `QingVoca` is pinned to the front-most tile (`tile-j`).
 - Each tile maps to a project screenshot and URL dynamically.
 
 | Card | Category | Description | Link |
 | :--- | :--- | :--- | :--- |
+| **QingVoca** | Language 🀄 | RedGold learner vocab app for HSK4 words, streaks, and daily Chinese reps. 🔥 | [heroyik.github.io/qingvoca](https://heroyik.github.io/qingvoca/) |
 | **MacSnow** | macOS ❄️ | Snow, Santa, gifts, scenery, and desktop animation for macOS. 🎄 | [github.com/heroyik/macsnow](https://github.com/heroyik/macsnow) |
 | **RedGold** | Language 🀄 | HSK4 Chinese learning sidekick with grammar and speaking practice energy. 🐉🔥 | [heroyik.github.io/redgold](https://heroyik.github.io/redgold/) |
 | **LLeM** | AI Development ✈️ | Local-first AI coding assistant for VS Code and Cursor, built for offline use. 🤖 | [github.com/heroyik/llem](https://github.com/heroyik/llem) |
@@ -198,6 +199,8 @@ the repo root. Published path: `.` (configured in `netlify.toml`).
 
 | Version | Detail |
 | :--- | :--- |
+| **v2.4.1** | Pinned QingVoca to the front-most hero collage card; |
+| | Added the QingVoca preview image and kept its card badge to `NEW`; |
 | **v2.4.0** | Added MacSnow as the front-most hero collage card; |
 | | Documented the full 13-card collage pool and added MacSnow/RedGold project rows; |
 | | Updated security notes for `liquidjs@10.27.0` and 0-vulnerability audit; |
