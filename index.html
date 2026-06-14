@@ -77,6 +77,26 @@
         line-height: 1.5;
       }
 
+      .icon-row {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-top: 26px;
+        color: var(--text);
+      }
+
+      .brand-icon {
+        width: 44px;
+        height: 44px;
+        flex: 0 0 auto;
+      }
+
+      .brand-arrow {
+        color: var(--accent);
+        font-size: 1.5rem;
+        font-weight: 900;
+      }
+
       .actions {
         display: flex;
         flex-wrap: wrap;
@@ -116,22 +136,55 @@
 
   <body>
     <main>
-      <p class="eyebrow">Heads up</p>
-      <h1>We moved.</h1>
+      <p class="eyebrow">New spot just dropped</p>
+      <h1>GitLab era.</h1>
       <p class="lede">
-        On June 10, 2026, heroyik packed up and slid over to
-        <strong>heroyik.gitlab.io</strong>. Hang tight, you are getting sent
-        there in 10 seconds.
+        Big love, GitHub. You held it down. As of June 10, 2026,
+        heroyik is pulling up at <strong>heroyik.gitlab.io</strong> now. Chill
+        for 10 seconds and I will slide you over.
       </p>
+      <div class="icon-row" aria-label="Moving from GitHub to GitLab">
+        <svg
+          class="brand-icon"
+          viewBox="0 0 16 16"
+          aria-label="GitHub"
+          role="img"
+        >
+          <path
+            fill="currentColor"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+          />
+        </svg>
+        <span class="brand-arrow" aria-hidden="true">-&gt;</span>
+        <svg
+          class="brand-icon"
+          viewBox="0 0 36 36"
+          aria-label="GitLab"
+          role="img"
+        >
+          <path
+            fill="#e24329"
+            d="M7.8 11.2 10.7 2.4c.3-.9 1.6-.9 1.9 0l2.8 8.8H7.8Zm12.8 0 2.8-8.8c.3-.9 1.6-.9 1.9 0l2.9 8.8h-7.6Z"
+          />
+          <path
+            fill="#fc6d26"
+            d="M18 33.2 7.8 11.2H1.6L18 33.2Zm0 0 10.2-22h6.2L18 33.2Z"
+          />
+          <path
+            fill="#fca326"
+            d="M1.6 11.2h6.2L18 33.2 2.3 21.8c-.7-.5-1-1.4-.7-2.2l3-8.4Zm32.8 0h-6.2L18 33.2l15.7-11.4c.7-.5 1-1.4.7-2.2l-3-8.4Z"
+          />
+        </svg>
+      </div>
       <div class="actions">
         <a
           class="button"
           href="https://heroyik.gitlab.io/"
           data-redirect-now
         >
-          Bounce now
+          Pull up on GitLab now
         </a>
-        <p class="note">No need to wait if you are already ready.</p>
+        <p class="note">Ten seconds is optional. The new spot is already live.</p>
       </div>
     </main>
   </body>
